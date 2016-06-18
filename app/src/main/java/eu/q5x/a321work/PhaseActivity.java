@@ -1,18 +1,31 @@
 package eu.q5x.a321work;
 
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import eu.q5x.a321work.Adapters.PhaseAdapter;
+import eu.q5x.a321work.Model.Phase;
 
 
 public class PhaseActivity extends AppCompatActivity {
+    private PhaseActivity activity = this;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
+
+    private PhaseAdapter.OnItemClickListener listener =
+            new PhaseAdapter.OnItemClickListener() {
+                @Override
+                public void onItemClick(Phase phase, final PhaseAdapter.ViewHolder viewHolder) {
+                    Intent openPhase = new Intent(activity, TaskActivity.class);
+                    openPhase.putExtra(TaskActivity.PHASE_ID, phase.id);
+                    startActivity(openPhase);
+                }
+            };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +43,7 @@ public class PhaseActivity extends AppCompatActivity {
             recyclerView.setLayoutManager(layoutManager);
 
             // specify an adapter (see also next example)
-            adapter = new PhaseAdapter(WorkApp.getPhases());
+            adapter = new PhaseAdapter(WorkApp.getPhases(), listener);
             recyclerView.setAdapter(adapter);
         }
     }

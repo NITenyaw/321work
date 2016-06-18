@@ -3,21 +3,20 @@ package eu.q5x.a321work.Adapters;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 import eu.q5x.a321work.Model.Phase;
+import eu.q5x.a321work.Model.Task;
 import eu.q5x.a321work.R;
 
 /**
  * Class description
  */
-public class PhaseAdapter extends RecyclerView.Adapter<PhaseAdapter.ViewHolder> {
-    private ArrayList<Phase> phases;
-    private OnItemClickListener listener;
+public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
+    private ArrayList<Task> tasks;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -41,46 +40,35 @@ public class PhaseAdapter extends RecyclerView.Adapter<PhaseAdapter.ViewHolder> 
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public PhaseAdapter(ArrayList<Phase> myPhases,
-                        OnItemClickListener myListener) {
-        phases = myPhases;
-        listener = myListener;
+    public TaskAdapter(ArrayList<Task> myTasks) {
+        tasks = myTasks;
     }
 
     // Create new views (invoked by the layout manager)
     @Override
-    public PhaseAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public TaskAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view
-        CardView cardView = (CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_phase, parent, false);
-
+        CardView cardView = (CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_task, parent, false);
+        // set the view's size, margins, paddings and layout parameters
 
         return new ViewHolder(cardView);
     }
 
     // Replace the contents of a view (invoked by the layout manager)
     @Override
-    public void onBindViewHolder(final ViewHolder holder, int position) {
+    public void onBindViewHolder(ViewHolder holder, int position) {
         // - get element from your dataset at this position
-        final Phase phase = phases.get(position);
+        Task task = tasks.get(position);
 
         // - replace the contents of the view with that element
-        holder.title.setText(phase.title);
+        holder.title.setText(task.title);
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                listener.onItemClick(phase, holder);
-            }
-        });
     }
 
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return phases.size();
-    }
-
-    public interface OnItemClickListener {
-        void onItemClick(Phase phase, ViewHolder viewHolder);
+        if (tasks == null) return 0;
+        return tasks.size();
     }
 }

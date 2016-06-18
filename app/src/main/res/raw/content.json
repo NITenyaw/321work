@@ -2,25 +2,39 @@
   {
     "title": "Preparation",
     "iconId": "preparation",
-    "id": "phase_prep",
-    "order": 100
+    "tasks": [
+      {
+        "id": "exampletask1",
+        "title": "Example 1",
+        "subtitle": "This is the first example task",
+        "iconId": "noIcon",
+        "order": 100,
+        "subTasks": [
+          {
+            "id": "subtaskexample1",
+            "title": "Subtask 1",
+            "order": 100,
+            "description": "YES, this is my first subtask description!!!!",
+            "contribution": 123
+          }
+        ]
+      }
+    ],
+    "id": "phase_prep"
   },
   {
     "title": "Work",
     "iconId": "work",
-    "id": "phase_work",
-    "order": 200
+    "id": "phase_work"
   },
   {
     "title": "Ausbildung",
     "iconId": "ausbildung",
-    "id": "phase_ausbildung",
-    "order": 300
+    "id": "phase_ausbildung"
   },
   {
     "title": "Studium",
     "iconId": "studium",
-    "id": "phase_studium",
-    "order": 400
+    "id": "phase_studium"
   }
 ]

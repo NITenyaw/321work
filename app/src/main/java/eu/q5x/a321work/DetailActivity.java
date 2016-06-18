@@ -9,7 +9,7 @@ import us.feras.mdv.MarkdownView;
 
 
 public class DetailActivity extends AppCompatActivity {
-    private static final String SUBTASK_ID = "subtaskId";
+    public static final String SUBTASK_ID = "subtaskId";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +18,12 @@ public class DetailActivity extends AppCompatActivity {
 
         String id = getIntent().getStringExtra(SUBTASK_ID);
         SubTask subTask = WorkApp.getSubTask(id);
+        if (subTask != null) {
 
-        MarkdownView markdownView = (MarkdownView) findViewById(R.id.markdownView);
-        if (markdownView != null) {
-            markdownView.loadMarkdown(subTask.description);
+            MarkdownView markdownView = (MarkdownView) findViewById(R.id.markdownView);
+            if (markdownView != null) {
+                markdownView.loadMarkdown(subTask.description);
+            }
         }
     }
 }
