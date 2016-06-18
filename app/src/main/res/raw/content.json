@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Preparation",
+    "iconId": "preparation",
+    "id": "phase_prep",
+    "order": 100
+  },
+  {
+    "title": "Work",
+    "iconId": "work",
+    "id": "phase_work",
+    "order": 200
+  },
+  {
+    "title": "Ausbildung",
+    "iconId": "ausbildung",
+    "id": "phase_ausbildung",
+    "order": 300
+  },
+  {
+    "title": "Studium",
+    "iconId": "studium",
+    "id": "phase_studium",
+    "order": 400
+  }
+]
