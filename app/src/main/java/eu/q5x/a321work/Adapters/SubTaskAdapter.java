@@ -2,6 +2,7 @@ package eu.q5x.a321work.Adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.widget.AppCompatCheckBox;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,6 +14,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 import eu.q5x.a321work.DetailActivity;
 import eu.q5x.a321work.Model.SubTask;
@@ -36,12 +38,14 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
         // each data item is just a string in this case
         public AppCompatCheckBox checkBox;
         public ImageView details;
+        public TextView subtitle;
 
         public ViewHolder(RelativeLayout v) {
             super(v);
 
             checkBox = (AppCompatCheckBox) v.findViewById(R.id.checkbox);
             details = (ImageView) v.findViewById(R.id.details);
+            subtitle = (TextView) v.findViewById(R.id.subtitle);
         }
     }
 
@@ -73,7 +77,17 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
 
         // - replace the contents of the view with that element
         // holder.title.setText(subTask.title);
-        holder.checkBox.setText(subTask.title);
+        if (subTask.title != null && !subTask.title.isEmpty()) {
+            String[] title = subTask.title.split("\r\n|\r|\n", 2);
+            holder.checkBox.setText(title[0]);
+            if (title.length > 1) {
+                holder.subtitle.setVisibility(View.VISIBLE);
+                holder.subtitle.setText(title[1]);
+            } else {
+                holder.subtitle.setVisibility(View.GONE);
+            }
+        }
+
         holder.checkBox.setChecked(WorkApp.getPref().contains(subTask.id));
         holder.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -83,7 +97,7 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
                 } else {
                     WorkApp.getPref().edit().remove(subTask.id).apply();
                 }
-                taskVh.setProgress(task.getProgress());
+                taskVh.setProgress(task.getProgress(), true);
             }
         });
         holder.details.setVisibility(View.GONE);
@@ -97,11 +111,31 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
             });
         }
 
-        /*
-        Context context = imageView.getContext();
-        int id = context.getResources().getIdentifier("picture0001", "drawable", context.getPackageName());
-        holder.icon.setImageResource(id);
-        */
+        if (subTask.dependencies != null && !subTask.dependencies.isEmpty()) {
+            SharedPreferences prefs = WorkApp.getPref();
+            applyDeps(holder.checkBox, prefs, subTask.dependencies);
+
+            prefs.registerOnSharedPreferenceChangeListener(
+                    new SharedPreferences.OnSharedPreferenceChangeListener() {
+                        public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
+                            if (subTask.dependencies.contains(key)) {
+                                applyDeps(holder.checkBox, prefs, subTask.dependencies);
+                            }
+                        }
+                    });
+        }
+    }
+
+    public void applyDeps(AppCompatCheckBox cb, SharedPreferences pref, HashSet<String> deps) {
+        boolean enabled = true;
+        for(String dep : deps) {
+            if (!pref.contains(dep)) {
+                enabled = false;
+                break;
+            }
+        }
+        cb.setEnabled(enabled);
+        if (!enabled) cb.setChecked(false);
     }
 
     public void onItemClick(SubTask subTask) {

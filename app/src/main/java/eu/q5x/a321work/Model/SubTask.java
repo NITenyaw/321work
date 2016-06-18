@@ -4,7 +4,7 @@ package eu.q5x.a321work.Model;
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import java.util.Set;
+import java.util.HashSet;
 
 import eu.q5x.a321work.WorkApp;
 
@@ -19,8 +19,8 @@ public class SubTask implements Comparable<SubTask> {
     public String category;
     public int order;
     public int contribution = 0;
-    public Set<String> dependencies;
-    public Set<String> autofulfills;
+    public HashSet<String> dependencies;
+    public HashSet<String> autofulfills;
 
     @Override
     public int compareTo(@NonNull SubTask o) {

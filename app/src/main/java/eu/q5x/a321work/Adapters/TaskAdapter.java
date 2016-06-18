@@ -47,16 +47,16 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
             icon = (ImageView) v.findViewById(R.id.task_icon);
             title = (TextView) v.findViewById(R.id.title);
             progressBar = (SmoothProgressBar) v.findViewById(R.id.progress);
-            progressBar.setAnimate(false);
             recyclerView = (RecyclerView) v.findViewById(R.id.subtask_recycler_view);
         }
 
-        public void setProgress(int progress) {
+        public void setProgress(int progress, boolean animate) {
             if (progress >= 99) {
                 header.setBackgroundColor(ContextCompat.getColor(itemView.getContext(), R.color.colorAccent));
             } else {
                 header.setBackgroundColor(0);
             }
+            progressBar.setAnimate(animate);
             progressBar.setProgress(progress);
         }
     }
@@ -89,7 +89,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
         holder.icon.setImageResource(id);
         holder.header.setBackgroundColor(0);
 
-        holder.setProgress(task.getProgress());
+        holder.setProgress(task.getProgress(), false);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(holder.itemView.getContext());
         holder.recyclerView.setLayoutManager(layoutManager);
