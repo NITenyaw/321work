@@ -19,6 +19,28 @@
             "description": "YES, this is my first subtask description!!!!",
             "contribution": 123,
             "dependencies": []
+          },
+          {
+            "id": "subtaskexample2",
+            "title": "Subtask 2",
+            "order": 200,
+            "contribution": 123,
+            "dependencies": []
+          },
+          {
+            "id": "subtaskexample3",
+            "title": "Subtask 3",
+            "order": 300,
+            "contribution": 123,
+            "dependencies": []
+          },
+          {
+            "id": "subtaskexample4",
+            "title": "Subtask 4",
+            "order": 400,
+            "description": "YES, this is my first subtask description!!!!",
+            "contribution": 123,
+            "dependencies": []
           }
         ]
       }

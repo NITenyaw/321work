@@ -14,10 +14,6 @@ import eu.q5x.a321work.Model.SubTask;
 public class TaskActivity extends AppCompatActivity {
     public static final String PHASE_ID = "phaseId";
 
-    private RecyclerView recyclerView;
-    private RecyclerView.Adapter adapter;
-    private RecyclerView.LayoutManager layoutManager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,18 +23,18 @@ public class TaskActivity extends AppCompatActivity {
         Phase phase = WorkApp.getPhase(id);
         if (phase != null) {
 
-            recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+            RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
             if (recyclerView != null) {
                 // use this setting to improve performance if you know that changes
                 // in content do not change the layout size of the RecyclerView
                 // recyclerView.setHasFixedSize(true);
 
                 // use a linear layout manager
-                layoutManager = new LinearLayoutManager(this);
+                RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
                 recyclerView.setLayoutManager(layoutManager);
 
                 // specify an adapter (see also next example)
-                adapter = new TaskAdapter(phase.tasks);
+                RecyclerView.Adapter adapter = new TaskAdapter(this, phase.tasks);
                 recyclerView.setAdapter(adapter);
             }
         }

@@ -1,5 +1,6 @@
 package eu.q5x.a321work.Adapters;
 
+import android.content.Context;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,6 +20,7 @@ import eu.q5x.a321work.R;
  * Class description
  */
 public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
+    private Context context;
     private ArrayList<Task> tasks;
 
     // Provide a reference to the views for each data item
@@ -42,7 +44,8 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public TaskAdapter(ArrayList<Task> myTasks) {
+    public TaskAdapter(Context parentContext, ArrayList<Task> myTasks) {
+        context = parentContext;
         tasks = myTasks;
     }
 
@@ -68,7 +71,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(holder.itemView.getContext());
         holder.recyclerView.setLayoutManager(layoutManager);
 
-        RecyclerView.Adapter adapter = new SubTaskAdapter(task.subTasks);
+        RecyclerView.Adapter adapter = new SubTaskAdapter(context, task.subTasks);
         holder.recyclerView.setAdapter(adapter);
         /*
         Context context = imageView.getContext();
