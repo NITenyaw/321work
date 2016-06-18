@@ -1,6 +1,8 @@
 package eu.q5x.a321work.Model;
 
 
+import android.support.annotation.NonNull;
+
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -17,5 +19,10 @@ public class Task {
     public Set<String> dependencies;
     public ArrayList<SubTask> subTasks;
 
-
+    public SubTask getSubTask(@NonNull String id) {
+        for(SubTask subtask : subTasks) {
+            if (id.equals(subtask.id)) return subtask;
+        }
+        return null;
+    }
 }

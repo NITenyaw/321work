@@ -3,7 +3,7 @@
     "title": "Preparation",
     "iconId": "preparation",
     "id": "phase_prep",
-    "order": 100
+    "order": 100,
   },
   {
     "title": "Work",
