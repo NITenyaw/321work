@@ -78,8 +78,6 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
 
         RecyclerView.Adapter adapter = new SubTaskAdapter(context, task.subTasks);
         holder.recyclerView.setAdapter(adapter);
-
-
         holder.recyclerView.setVisibility(task.isExpanded ? View.VISIBLE : View.GONE);
 
         holder.header.setOnClickListener(
