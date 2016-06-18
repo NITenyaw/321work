@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">321work</string>
+    <string name="app_name">321work!</string>
+    <string name="phase_icon">Phase icon</string>
+    <string name="example_phase">Example phase</string>
 </resources>

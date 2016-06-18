@@ -14,4 +14,5 @@ public class SubTask {
     public String description;
     public int contribution;
     public Set<String> dependencies;
+    public Set<String> satisfies;
 }
