@@ -1,0 +1,333 @@
+{
+  "title": "Apprenticeship",
+  "iconId": "appr",
+  "id": "appr",
+  "order": 300,
+  "tasks": [
+    {
+      "id": "appr-beinf",
+      "title": "Be informed",
+      "subtitle": "There are so many sources that can support you!",
+      "iconId": "",
+      "order": 10,
+      "subTasks": [
+        {
+          "id": "appr-beinf-1",
+          "title": "Inform yourself about the German vocational course system",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "appr-beinf-2",
+          "title": "Reflect on your strengths",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "appr-beinf-3",
+          "title": "Reflect on what you want to do",
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "appr-beinf-4",
+          "title": "Do an online fitting assessment",
+          "order": 4,
+          "contribution": 1
+        },
+        {
+          "id": "appr-beinf-5",
+          "title": "Do reseach about available vocational fields",
+          "order": 5,
+          "contribution": 1
+        },
+        {
+          "id": "appr-beinf-6",
+          "title": "Inform yourself about the local labour market",
+          "order": 6,
+          "contribution": 1
+        },
+        {
+          "id": "appr-beinf-7",
+          "title": "Inform yourself about the level of German demanded",
+          "order": 7,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "appr-contactImm",
+      "title": "Contact you immigration office",
+      "subtitle": "They can tell you the best what your next steps should be.",
+      "iconId": "",
+      "order": 20,
+      "subTasks": [
+        {
+          "id": "appr-contactImm-1",
+          "title": "Tell them about your plans and preferences",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "appr-contactImm-2",
+          "title": "Ask them for guidance and follow their directions",
+          "order": 2,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "appr-visitEA",
+      "title": "Visit the local employance agency",
+      "subtitle": "They are the specialists for finding a job opportunity.",
+      "iconId": "",
+      "order": 30,
+      "subTasks": [
+        {
+          "id": "appr-visitEA-1",
+          "title": "Collect school and work certificates",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "appr-visitEA-2",
+          "title": "Write down your experience, strengths and wishes",
+          "order": 2,
+          "contribution": 0
+        },
+        {
+          "id": "appr-visitEA-3",
+          "title": "Get an appointment at your local employment agency",
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "appr-visitEA-4",
+          "title": "Keep your appointment",
+          "order": 4,
+          "contribution": 1,
+          "dependencies": [
+            "appr-visitEA-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "appr-internship",
+      "title": "Internship for orientation",
+      "subtitle": "An internship might be a great opportunity to get some first-hand experience in an area of work, even if not paid.",
+      "iconId": "",
+      "order": 30,
+      "subTasks": [
+        {
+          "id": "appr-internship-1",
+          "title": "Inform yourself about the different kinds of internships",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "appr-internship-2",
+          "title": "Find a place where you can do an internship",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "appr-internship-3",
+          "title": "Apply for an internship",
+          "order": 3,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "appr-prerequisites",
+      "title": "Fulfill official prerequisites for an apprenticeship",
+      "subtitle": "There are different ways to become eligible to work in Germany as an immigrant.",
+      "iconId": "",
+      "MaxContribution": 3,
+      "order": 40,
+      "subTasks": [
+        {
+          "id": "appr-prerequisites-1",
+          "title": "3 Months have passed since application for asylum",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "appr-prerequisites-2",
+          "title": "You do not come from a safe country of origin",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "appr-prerequisites-3",
+          "title": "You do not live within a refugee centre",
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "appr-prerequisites-4",
+          "title": "You have continuously lived in Germany for more than 4 years",
+          "order": 4,
+          "contribution": 3
+        },
+        {
+          "id": "appr-prerequisites-5",
+          "title": "You have been granted asylum",
+          "order": 5,
+          "contribution": 3
+        },
+        {
+          "id": "appr-prerequisites-6",
+          "title": "You have been granted official status as a refugee",
+          "order": 6,
+          "contribution": 3
+        },
+        {
+          "id": "appr-prerequisites-7",
+          "title": "You have been granted subsidiary protection",
+          "order": 7,
+          "contribution": 3
+        },
+        {
+          "id": "appr-prerequisites-8",
+          "title": "Recheck your status with your immigration office",
+          "order": 8,
+          "contribution": 0
+        }
+      ]
+    },
+    {
+      "id": "appr-apply",
+      "title": "Apply to companies or schools",
+      "subtitle": "Choose your favourites and apply for an apprenticeship there!",
+      "iconId": "",
+      "order": 50,
+      "dependencies": [
+            "appr-prerequisites"
+      ],
+      "subTasks": [
+        {
+          "id": "appr-apply-1",
+          "title": "Use the job portal of the employment agency",
+          "order": 1,
+          "contribution": 0
+        },
+        {
+          "id": "appr-apply-2",
+          "title": "Ask your consultant at the employment agency for jobs",
+          "order": 2,
+          "contribution": 0
+        },
+        {
+          "id": "appr-apply-3",
+          "title": "Thoroughly read the job descriptions",
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "appr-apply-4",
+          "title": "Write application letters",
+          "order": 4,
+          "contribution": 1
+        },
+        {
+          "id": "appr-apply-5",
+          "title": "Ask someone to check your application",
+          "order": 5,
+          "contribution": 0
+        },
+        {
+          "id": "appr-apply-6",
+          "title": "Mail in your applications and wait for reply",
+          "order": 6,
+          "contribution": 1
+        },
+        {
+          "id": "appr-apply-7",
+          "title": "Continue to look for alternatives",
+          "order": 7,
+          "contribution": 0
+        }
+      ]
+    },
+    {
+      "id": "appr-approval",
+      "title": "Get your apprenticeship approved",
+      "subtitle": "You'll need an approvement from the immigration office before you can start to work.",
+      "iconId": "",
+      "order": 60,
+      "dependencies": [
+            "appr-apply"
+      ],
+      "subTasks": [
+        {
+          "id": "appr-approval-1",
+          "title": "Get the official form for the work approval from the immigration office",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "appr-approval-2",
+          "title": "Fill out the form as far as you can get",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "appr-approval-3",
+          "title": "Get the form completed by your company/school",
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "appr-approval-4",
+          "title": "Attach copies of requested certificates",
+          "order": 4,
+          "contribution": 1
+        },
+        {
+          "id": "appr-approval-5",
+          "title": "Bring the form to your immigration office",
+          "order": 5,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "appr-startAppr",
+      "title": "Start your apprenticeship",
+      "subtitle": "Almost everything",
+      "iconId": "",
+      "order": 70,
+      "dependencies": [
+            "appr-approval"
+      ],
+      "subTasks": [
+        {
+          "id": "appr-startAppr-1",
+          "title": "Work out a contract with your company/school",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "appr-startAppr-2",
+          "title": "Inform yourself about social insurance",
+          "order": 2,
+          "contribution": 0
+        },
+        {
+          "id": "appr-startAppr-3",
+          "title": "Inform yourself about job-specific regulations",
+          "order": 3,
+          "contribution": 0
+        },
+        {
+          "id": "appr-startAppr-4",
+          "title": "Begin your apprenticeship and enjoy it!",
+          "order": 4,
+          "contribution": 1
+        }
+      ]
+    }
+  ]
+}
