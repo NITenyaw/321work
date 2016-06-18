@@ -47,6 +47,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
             icon = (ImageView) v.findViewById(R.id.task_icon);
             title = (TextView) v.findViewById(R.id.title);
             progressBar = (SmoothProgressBar) v.findViewById(R.id.progress);
+            progressBar.setAnimate(false);
             recyclerView = (RecyclerView) v.findViewById(R.id.subtask_recycler_view);
         }
 

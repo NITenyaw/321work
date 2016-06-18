@@ -11,22 +11,15 @@
 
     <android.support.v7.widget.AppCompatCheckBox
         android:id="@+id/checkbox"
+        android:text="@string/example_subtask"
+        android:textColor="#666"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:padding="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true" />
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/example_subtask"
-        android:maxLines="2"
-        android:padding="8dp"
-        android:textColor="#666"
-        android:textStyle="bold"
-        android:textSize="14sp"
-        android:layout_toEndOf="@+id/checkbox" />
 
     <ImageView
         android:layout_width="20dp"
@@ -34,6 +27,14 @@
         android:id="@+id/details"
         android:src="@drawable/ic_help"
         android:layout_centerVertical="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/more_infos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textView" />
 
 </RelativeLayout>

@@ -35,14 +35,12 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
     public static class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         public AppCompatCheckBox checkBox;
-        public TextView title;
         public ImageView details;
 
         public ViewHolder(RelativeLayout v) {
             super(v);
 
             checkBox = (AppCompatCheckBox) v.findViewById(R.id.checkbox);
-            title = (TextView) v.findViewById(R.id.title);
             details = (ImageView) v.findViewById(R.id.details);
         }
     }
@@ -74,7 +72,8 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
         final SubTask subTask = subTasks.get(position);
 
         // - replace the contents of the view with that element
-        holder.title.setText(subTask.title);
+        // holder.title.setText(subTask.title);
+        holder.checkBox.setText(subTask.title);
         holder.checkBox.setChecked(WorkApp.getPref().contains(subTask.id));
         holder.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

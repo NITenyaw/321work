@@ -23,12 +23,11 @@ public class Phase implements Comparable<Phase> {
         return 0;
     }
 
-    /*
-    public Task getTask(@NonNull String id) {
+    public int getProgress() {
+        int percentDone = 0;
         for(Task task : tasks) {
-            if (id.equals(task.id)) return task;
+            percentDone += Math.round((float) task.getProgress() / (float) tasks.size());
         }
-        return null;
+        return percentDone;
     }
-    */
 }

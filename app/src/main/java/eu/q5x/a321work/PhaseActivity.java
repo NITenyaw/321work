@@ -13,6 +13,7 @@ import eu.q5x.a321work.Model.Phase;
 
 public class PhaseActivity extends AppCompatActivity {
     private PhaseActivity activity = this;
+    RecyclerView.Adapter adapter;
 
     private PhaseAdapter.OnItemClickListener listener =
             new PhaseAdapter.OnItemClickListener() {
@@ -40,8 +41,14 @@ public class PhaseActivity extends AppCompatActivity {
             recyclerView.setLayoutManager(layoutManager);
 
             // specify an adapter (see also next example)
-            RecyclerView.Adapter adapter = new PhaseAdapter(WorkApp.getPhases(), listener);
+            adapter = new PhaseAdapter(WorkApp.getPhases(), listener);
             recyclerView.setAdapter(adapter);
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        adapter.notifyDataSetChanged();
     }
 }

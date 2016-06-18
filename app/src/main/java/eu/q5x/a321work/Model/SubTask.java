@@ -18,7 +18,7 @@ public class SubTask implements Comparable<SubTask> {
     public String description;
     public String category;
     public int order;
-    public int contribution;
+    public int contribution = 0;
     public Set<String> dependencies;
     public Set<String> autofulfills;
 

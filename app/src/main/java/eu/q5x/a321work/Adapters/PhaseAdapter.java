@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -26,12 +27,14 @@ public class PhaseAdapter extends RecyclerView.Adapter<PhaseAdapter.ViewHolder> 
     // you provide access to all the views for a data item in a view holder
     public static class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
+        public ProgressBar progressBar;
         public TextView title;
         public ImageView icon;
 
         public ViewHolder(CardView v) {
             super(v);
 
+            progressBar = (ProgressBar) v.findViewById(R.id.progress);
             title = (TextView) v.findViewById(R.id.title);
             icon = (ImageView) v.findViewById(R.id.phase_icon);
         }
@@ -61,6 +64,7 @@ public class PhaseAdapter extends RecyclerView.Adapter<PhaseAdapter.ViewHolder> 
 
         // - replace the contents of the view with that element
         holder.title.setText(phase.title);
+        holder.progressBar.setProgress(phase.getProgress());
 
         Context context = holder.icon.getContext();
         int id = context.getResources().getIdentifier(phase.id, "mipmap", context.getPackageName());

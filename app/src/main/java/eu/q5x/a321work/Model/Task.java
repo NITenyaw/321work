@@ -16,7 +16,7 @@ public class Task implements Comparable<Task> {
     public String iconId;
     public String subtitle;
     public int order;
-    public int maxContribution;
+    public int maxContribution = 0;
     public boolean isExpanded = false;
     public Set<String> dependencies;
     public ArrayList<SubTask> subTasks;
@@ -40,6 +40,14 @@ public class Task implements Comparable<Task> {
      * @return Progress of task in percent.
      */
     public int getProgress() {
+        if (maxContribution > 0) {
+            int sumContribution = 0;
+            for(SubTask subtask : subTasks) {
+                if (subtask.isDone()) sumContribution += subtask.contribution;
+            }
+            return Math.round((float) maxContribution / (float) sumContribution);
+        }
+
         int percentDone = 0;
         for(SubTask subtask : subTasks) {
             if (subtask.isDone()) percentDone += Math.round(100f / subTasks.size());
