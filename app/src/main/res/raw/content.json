@@ -43,7 +43,25 @@
             "dependencies": []
           }
         ]
-      }
+      },
+        {
+          "id": "exampletask76",
+          "title": "Example 123",
+          "subtitle": "This is the first example task",
+          "iconId": "noIcon",
+          "order": 200,
+          "dependencies": [],
+          "subTasks": [
+            {
+              "id": "subtaskexample42",
+              "title": "Subtask 1",
+              "order": 100,
+              "description": "YES, this is my first subtask description!!!!",
+              "contribution": 123,
+              "dependencies": []
+            }
+          ]
+        }
     ],
     "id": "phase_prep"
   },
@@ -59,8 +77,48 @@
     "iconId": "ausbildung",
     "id": "phase_ausbildung",
     "order": 300,
-    "tasks": []
-
+    "tasks": [
+      {
+        "id": "exampletask11",
+        "title": "Example 1",
+        "subtitle": "This is the first example task",
+        "iconId": "noIcon",
+        "order": 100,
+        "dependencies": [],
+        "subTasks": [
+          {
+            "id": "subtaskexample11",
+            "title": "Subtask 1",
+            "order": 100,
+            "description": "YES, this is my first subtask description!!!!",
+            "contribution": 123,
+            "dependencies": []
+          },
+          {
+            "id": "subtaskexample21",
+            "title": "Subtask 21",
+            "order": 200,
+            "contribution": 123,
+            "dependencies": []
+          },
+          {
+            "id": "subtaskexample31",
+            "title": "Subtask 3",
+            "order": 300,
+            "contribution": 123,
+            "dependencies": []
+          },
+          {
+            "id": "subtaskexample41",
+            "title": "Subtask 4",
+            "order": 400,
+            "description": "YES, this is my first subtask description!!!!",
+            "contribution": 123,
+            "dependencies": []
+          }
+        ]
+      }
+    ]
   },
   {
     "title": "Studium",
