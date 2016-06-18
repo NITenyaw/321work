@@ -1,0 +1,300 @@
+{
+  "title": "Prepare for life in Germany",
+  "id": "prepare",
+  "order": 200,
+  "tasks": [
+    {
+      "id": "prepare-learnGerman",
+      "title": "Learn German",
+      "subtitle": "by signing up for an virtually-free Integration Course",
+      "order": 10,
+      "subTasks": [
+        {
+          "id": "prepare-learnGerman-1",
+          "title": "You MUST have your residence permit or temporary suspension of deportation\nYou also MUST be from Iran, Iraq, Syria or Eritrea",
+          "order": 1,
+          "contribution": 0
+        },
+        {
+          "id": "prepare-learnGerman-2",
+          "title": "File an application to BAMF headquarters\nFor\nadmittance to an integration course.",
+          "dependencies": [
+            "prepare-learnGerman-1"
+          ],
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-learnGerman-3",
+          "title": "Take 600 hours of a language course",
+          "dependencies": [
+            "prepare-learnGerman-2"
+          ],
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-learnGerman-4",
+          "title": "Take 60 hours of an orientation course",
+          "dependencies": [
+            "prepare-learnGerman-2"
+          ],
+          "order": 4,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-learnGerman-5",
+          "title": "Pass the language examination",
+          "dependencies": [
+            "prepare-learnGerman-3"
+          ],
+          "order": 5,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-learnGerman-6",
+          "title": "Pass the orientation examination",
+          "dependencies": [
+            "prepare-learnGerman-4"
+          ],
+          "order": 6,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-learnGerman-7",
+          "title": "Receive the \"Integration Course Certificate\"",
+          "dependencies": [
+            "prepare-learnGerman-5",
+            "prepare-learnGerman-6"
+          ],
+          "order": 7,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "prepare-community",
+      "title": "Participate in the community",
+      "subtitle": "It's the best way for getting the country known!",
+      "order": 20,
+      "subTasks": [
+        {
+          "id": "prepare-community-1",
+          "title": "Create a list of questions for the Advisory Center \ne.g. Ask how to get help to set up appointments with doctors, schools and immigration officials",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-community-2",
+          "title": "Go to an Advisory Center in your area",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-community-3",
+          "title": "Ask your questions to an Advisory Center employee",
+          "dependencies": [
+            "prepare-community-2"
+          ],
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-community-4",
+          "title": "Meet with a contact from the community provided by\nthe Advisory Center",
+          "order": 4,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-community-5",
+          "title": "Participate in community events \ne.g. intercultural\ntours, German conversation groups, and sports events",
+          "order": 5,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "prepare-bankAccount",
+      "title": "Open a Bank Account",
+      "subtitle": "You'll need that for various reasons.",
+      "order": 30,
+      "subTasks": [
+        {
+          "id": "prepare-bankAccount-1",
+          "title": "Gather the documents needed to open a bank account\ne.g. passport, certificate of residency, optional a pay statement from your employer and work permit)",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-bankAccount-2",
+          "title": "Go to an Advisory Center to find someone to translate for you at the bank",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-bankAccount-3",
+          "title": "Go to a local bank with your translator or advisor",
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-bankAccount-4",
+          "title": "Ask the bank officer for information about opening an account\ne.g. Ask about opening an EC or giro bank account",
+          "order": 4,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-bankAccount-5",
+          "title": "Go to more than one bank to compare offers",
+          "order": 5,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-bankAccount-6",
+          "title": "Choose the bank with the best terms for you",
+          "order": 6,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-bankAccount-7",
+          "title": "Return to the bank of your choice with your\ntranslator or advisor",
+          "order": 7,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-bankAccount-8",
+          "title": "Open the bank account",
+          "order": 8,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-bankAccount-9",
+          "title": "Received your EC card in the mail",
+          "dependencies": [
+            "prepare-bankAccount-8"
+          ],
+          "order": 9,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "prepare-SIMcard",
+      "title": "Get a SIM Card",
+      "subtitle": "For your mobile phone/smartphone.",
+      "order": 40,
+      "subTasks": [
+        {
+          "id": "prepare-SIMcard-2",
+          "title": "Go to an Advisory Center to find someone to\ntranslate for you at the store",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-SIMcard-3",
+          "title": "For a prepaid card, go to the supermarket\nThey usually have the cheapest offers",
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-SIMcard-4",
+          "title": "For a postpaid contract, go to an smartphone or electronics store\nYou'll need your residency permit",
+          "order": 4,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-SIMcard-5",
+          "title": "Ask the store salesperson for information about\nbuying a SIM Card",
+          "dependencies": [
+            "prepare-learnGerman-3"
+          ],
+          "order": 5,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-SIMcard-6",
+          "title": "Go to more than one store that sells SIM Cards to compare offers\nAn allnet-flatrate should be below 20 EUR/month",
+          "order": 6,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-SIMcard-7",
+          "title": "Choose the contract with the best terms for\nyou",
+          "order": 7,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-SIMcard-8",
+          "title": "Return to the store of your choice with your\ntranslator or advisor",
+          "order": 8,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-SIMcard-9",
+          "title": "Buy a SIM Card",
+          "order": 9,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-SIMcard-10",
+          "title": "Install the SIM Card into your phone",
+          "order": 10,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-SIMcard-11",
+          "title": "Test the SIM Card\nFollow the instructors shipped with your SIM Card.",
+          "order": 11,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "prepare-help",
+      "title": "Where to find Help",
+      "subtitle": "e.g. Support Centers, Counselors & Doctors",
+      "order": 50,
+      "subTasks": [
+        {
+          "id": "prepare-help-1",
+          "title": "Check free offers from associations, support centers and local groups",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-help-2",
+          "title": "In emergency cases, call 112",
+          "order": 2,
+          "contribution": 0
+        },
+        {
+          "id": "prepare-help-3",
+          "title": "Your Application for asylum has been accepted or\nyou have lived in Germany for 15 months\nFor professional help in non-emergency situations.",
+          "order": 3,
+          "contribution": 0
+        },
+        {
+          "id": "prepare-help-4",
+          "title": "Go to an Advisory Center to find someone to translate for you\nAt the doctor’s office or trauma center",
+          "order": 4,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-help-5",
+          "title": "Go to a local doctor’s office or trauma center with your translator or advisor",
+          "order": 5,
+          "contribution": 1
+        },
+        {
+          "id": "prepare-help-6",
+          "title": "Set up follow up appointments with your doctor or\ncounselor\nWith the help of your translator or advisor",
+          "dependencies": [
+            "prepare-help-5"
+          ],
+          "order": 6,
+          "contribution": 1
+        }
+      ]
+    }
+  ]
+}
