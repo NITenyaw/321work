@@ -1,10 +1,12 @@
 package eu.q5x.a321work.Adapters;
 
+import android.content.Context;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -25,18 +27,13 @@ public class PhaseAdapter extends RecyclerView.Adapter<PhaseAdapter.ViewHolder> 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
         public TextView title;
+        public ImageView icon;
 
         public ViewHolder(CardView v) {
             super(v);
 
             title = (TextView) v.findViewById(R.id.title);
-
-            // icon
-            /*
-            Context context = imageView.getContext();
-            int id = context.getResources().getIdentifier("picture0001", "drawable", context.getPackageName());
-            imageView.setImageResource(id);
-            */
+            icon = (ImageView) v.findViewById(R.id.phase_icon);
         }
     }
 
@@ -53,7 +50,6 @@ public class PhaseAdapter extends RecyclerView.Adapter<PhaseAdapter.ViewHolder> 
         // create a new view
         CardView cardView = (CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.cardview_phase, parent, false);
 
-
         return new ViewHolder(cardView);
     }
 
@@ -66,6 +62,9 @@ public class PhaseAdapter extends RecyclerView.Adapter<PhaseAdapter.ViewHolder> 
         // - replace the contents of the view with that element
         holder.title.setText(phase.title);
 
+        Context context = holder.icon.getContext();
+        int id = context.getResources().getIdentifier(phase.id, "mipmap", context.getPackageName());
+        holder.icon.setImageResource(id);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,6 +76,7 @@ public class PhaseAdapter extends RecyclerView.Adapter<PhaseAdapter.ViewHolder> 
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
+        if (phases == null) return 0;
         return phases.size();
     }
 

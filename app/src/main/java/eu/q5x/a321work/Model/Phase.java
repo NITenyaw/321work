@@ -23,10 +23,12 @@ public class Phase implements Comparable<Phase> {
         return 0;
     }
 
+    /*
     public Task getTask(@NonNull String id) {
         for(Task task : tasks) {
             if (id.equals(task.id)) return task;
         }
         return null;
     }
+    */
 }

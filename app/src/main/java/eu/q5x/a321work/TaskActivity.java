@@ -1,6 +1,8 @@
 package eu.q5x.a321work;
 
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,11 +11,12 @@ import android.support.v7.widget.RecyclerView;
 
 import eu.q5x.a321work.Adapters.TaskAdapter;
 import eu.q5x.a321work.Model.Phase;
-import eu.q5x.a321work.Model.SubTask;
+import eu.q5x.a321work.Model.Task;
 
 
 public class TaskActivity extends AppCompatActivity {
     public static final String PHASE_ID = "phaseId";
+    public SharedPreferences.OnSharedPreferenceChangeListener prefListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +24,16 @@ public class TaskActivity extends AppCompatActivity {
         setContentView(R.layout.activity_task);
 
         String id = getIntent().getStringExtra(PHASE_ID);
-        Phase phase = WorkApp.getPhase(id);
+        final Phase phase = WorkApp.getPhase(id);
         if (phase != null) {
-
             ActionBar actionBar = getSupportActionBar();
             if (actionBar != null) {
                 actionBar.setTitle(phase.title);
+
+                int iconId = getResources().getIdentifier(phase.id, "mipmap", getPackageName());
+                actionBar.setLogo(iconId);
+                actionBar.setDisplayUseLogoEnabled(true);
+                actionBar.setDisplayShowHomeEnabled(true);
             }
             RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
             if (recyclerView != null) {
@@ -39,7 +46,7 @@ public class TaskActivity extends AppCompatActivity {
                 recyclerView.setLayoutManager(layoutManager);
 
                 // specify an adapter (see also next example)
-                RecyclerView.Adapter adapter = new TaskAdapter(this, phase.tasks);
+                RecyclerView.Adapter adapter = new TaskAdapter(phase.tasks);
                 recyclerView.setAdapter(adapter);
             }
         }

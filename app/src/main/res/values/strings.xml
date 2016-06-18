@@ -3,4 +3,5 @@
     <string name="phase_icon">Phase icon</string>
     <string name="example_phase">Example phase</string>
     <string name="task_icon">Task icon</string>
+    <string name="example_subtask">Example subtask</string>
 </resources>

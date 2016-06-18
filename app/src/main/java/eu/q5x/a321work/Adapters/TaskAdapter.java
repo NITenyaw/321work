@@ -1,6 +1,7 @@
 package eu.q5x.a321work.Adapters;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -11,6 +12,7 @@ import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -18,39 +20,48 @@ import java.util.ArrayList;
 import eu.q5x.a321work.Model.Phase;
 import eu.q5x.a321work.Model.Task;
 import eu.q5x.a321work.R;
+import eu.q5x.a321work.View.SmoothProgressBar;
 
 /**
  * Class description
  */
 public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
-    private Context context;
     private ArrayList<Task> tasks;
+    private TaskAdapter taskAdapter = this;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder
     public static class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
-        public LinearLayout header;
+        public RelativeLayout header;
         public ImageView icon;
         public TextView title;
-        public ProgressBar progressBar;
+        public SmoothProgressBar progressBar;
         public RecyclerView recyclerView;
 
         public ViewHolder(CardView v) {
             super(v);
 
-            header = (LinearLayout) v.findViewById(R.id.header);
+            header = (RelativeLayout) v.findViewById(R.id.header);
             icon = (ImageView) v.findViewById(R.id.task_icon);
             title = (TextView) v.findViewById(R.id.title);
-            progressBar = (ProgressBar) v.findViewById(R.id.progress);
+            progressBar = (SmoothProgressBar) v.findViewById(R.id.progress);
             recyclerView = (RecyclerView) v.findViewById(R.id.subtask_recycler_view);
+        }
+
+        public void setProgress(int progress) {
+            if (progress >= 99) {
+                header.setBackgroundColor(ContextCompat.getColor(itemView.getContext(), R.color.colorAccent));
+            } else {
+                header.setBackgroundColor(0);
+            }
+            progressBar.setProgress(progress);
         }
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public TaskAdapter(Context parentContext, ArrayList<Task> myTasks) {
-        context = parentContext;
+    public TaskAdapter(ArrayList<Task> myTasks) {
         tasks = myTasks;
     }
 
@@ -70,13 +81,19 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
         // - get element from your dataset at this position
         final Task task = tasks.get(position);
 
-        // - replace the contents of the view with that element
         holder.title.setText(task.title);
+
+        Context context = holder.icon.getContext();
+        int id = context.getResources().getIdentifier(task.id, "mipmap", context.getPackageName());
+        holder.icon.setImageResource(id);
+        holder.header.setBackgroundColor(0);
+
+        holder.setProgress(task.getProgress());
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(holder.itemView.getContext());
         holder.recyclerView.setLayoutManager(layoutManager);
 
-        RecyclerView.Adapter adapter = new SubTaskAdapter(context, task.subTasks);
+        RecyclerView.Adapter adapter = new SubTaskAdapter(context, task, holder);
         holder.recyclerView.setAdapter(adapter);
         holder.recyclerView.setVisibility(task.isExpanded ? View.VISIBLE : View.GONE);
 
@@ -93,7 +110,6 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
         int id = context.getResources().getIdentifier("picture0001", "drawable", context.getPackageName());
         holder.icon.setImageResource(id);
         */
-
     }
 
     // Return the size of your dataset (invoked by the layout manager)

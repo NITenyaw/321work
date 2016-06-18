@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -15,13 +16,17 @@ import java.util.ArrayList;
 
 import eu.q5x.a321work.DetailActivity;
 import eu.q5x.a321work.Model.SubTask;
+import eu.q5x.a321work.Model.Task;
 import eu.q5x.a321work.R;
+import eu.q5x.a321work.WorkApp;
 
 /**
  * Class description
  */
 public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHolder> {
     private Context context;
+    private Task task;
+    private TaskAdapter.ViewHolder taskVh;
     private ArrayList<SubTask> subTasks;
 
     // Provide a reference to the views for each data item
@@ -44,9 +49,12 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
 
     // Provide a suitable constructor (depends on the kind of dataset)
     public SubTaskAdapter(Context parentContext,
-                          ArrayList<SubTask> mySubTasks) {
+                          Task parentTask,
+                          TaskAdapter.ViewHolder parentVh) {
         context = parentContext;
-        subTasks = mySubTasks;
+        task = parentTask;
+        taskVh = parentVh;
+        subTasks = task.subTasks;
     }
 
     // Create new views (invoked by the layout manager)
@@ -61,19 +69,31 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
 
     // Replace the contents of a view (invoked by the layout manager)
     @Override
-    public void onBindViewHolder(final ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, final int position) {
         // - get element from your dataset at this position
-        final SubTask task = subTasks.get(position);
+        final SubTask subTask = subTasks.get(position);
 
         // - replace the contents of the view with that element
-        holder.title.setText(task.title);
+        holder.title.setText(subTask.title);
+        holder.checkBox.setChecked(WorkApp.getPref().contains(subTask.id));
+        holder.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    WorkApp.getPref().edit().putBoolean(subTask.id, true).apply();
+                } else {
+                    WorkApp.getPref().edit().remove(subTask.id).apply();
+                }
+                taskVh.setProgress(task.getProgress());
+            }
+        });
         holder.details.setVisibility(View.GONE);
-        if (task.description != null) {
+        if (subTask.description != null && !subTask.description.isEmpty()) {
             holder.details.setVisibility(View.VISIBLE);
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    onItemClick(task);
+                    onItemClick(subTask);
                 }
             });
         }
