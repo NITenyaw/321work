@@ -10,13 +10,15 @@
         "subtitle": "This is the first example task",
         "iconId": "noIcon",
         "order": 100,
+        "dependencies": [],
         "subTasks": [
           {
             "id": "subtaskexample1",
             "title": "Subtask 1",
             "order": 100,
             "description": "YES, this is my first subtask description!!!!",
-            "contribution": 123
+            "contribution": 123,
+            "dependencies": []
           }
         ]
       }
@@ -27,18 +29,23 @@
     "title": "Work",
     "iconId": "work",
     "id": "phase_work",
-    "order": 200
+    "order": 200,
+    "tasks": []
   },
   {
     "title": "Ausbildung",
     "iconId": "ausbildung",
     "id": "phase_ausbildung",
-    "order": 300
+    "order": 300,
+    "tasks": []
+
   },
   {
     "title": "Studium",
     "iconId": "studium",
     "id": "phase_studium",
-    "order": 400
+    "order": 400,
+    "tasks": []
+
   }
 ]
