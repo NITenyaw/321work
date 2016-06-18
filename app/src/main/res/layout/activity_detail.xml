@@ -10,14 +10,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="eu.q5x.a321work.DetailActivity">
 
-    <us.feras.mdv.MarkdownView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/markdownView" />
+        android:orientation="vertical" >
+            <us.feras.mdv.MarkdownView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/markdownView" />
 
-    <org.osmdroid.views.MapView
-        android:id = "@+id/mapview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></org.osmdroid.views.MapView>
+            <org.osmdroid.views.MapView
+                android:id = "@+id/mapview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></org.osmdroid.views.MapView>
+    </LinearLayout>
 
 </RelativeLayout>
