@@ -16,6 +16,7 @@ public class Task {
     public String subtitle;
     public String iconId;
     public int order;
+    public boolean isExpanded = false;
     public Set<String> dependencies;
     public ArrayList<SubTask> subTasks;
 

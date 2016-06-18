@@ -5,8 +5,11 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -28,6 +31,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
     // you provide access to all the views for a data item in a view holder
     public static class ViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
+        public LinearLayout header;
         public ImageView icon;
         public TextView title;
         public ProgressBar progressBar;
@@ -36,6 +40,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
         public ViewHolder(CardView v) {
             super(v);
 
+            header = (LinearLayout) v.findViewById(R.id.header);
             icon = (ImageView) v.findViewById(R.id.task_icon);
             title = (TextView) v.findViewById(R.id.title);
             progressBar = (ProgressBar) v.findViewById(R.id.progress);
@@ -61,9 +66,9 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
 
     // Replace the contents of a view (invoked by the layout manager)
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, int position) {
         // - get element from your dataset at this position
-        Task task = tasks.get(position);
+        final Task task = tasks.get(position);
 
         // - replace the contents of the view with that element
         holder.title.setText(task.title);
@@ -73,6 +78,18 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
 
         RecyclerView.Adapter adapter = new SubTaskAdapter(context, task.subTasks);
         holder.recyclerView.setAdapter(adapter);
+
+
+        holder.recyclerView.setVisibility(task.isExpanded ? View.VISIBLE : View.GONE);
+
+        holder.header.setOnClickListener(
+            new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    task.isExpanded = !task.isExpanded;
+                    notifyDataSetChanged();
+                }
+            });
         /*
         Context context = imageView.getContext();
         int id = context.getResources().getIdentifier("picture0001", "drawable", context.getPackageName());
