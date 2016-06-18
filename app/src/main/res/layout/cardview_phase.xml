@@ -2,7 +2,6 @@
     <!-- A CardView that contains a TextView -->
 <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/tools"
     android:id="@+id/card_view"
     android:layout_gravity="center"
     android:layout_width="match_parent"
@@ -16,14 +15,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.daasuu.ahp.AnimateHorizontalProgressBar
+        <ProgressBar style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/phase_progressbar"
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
             android:id="@+id/progress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:progress="45"
             android:max="100"
-            app:ahp_progressColor="@color/colorAccent"
-            app:ahp_backgroundColor="@android:color/transparent"/>
+            android:progress="45"/>
 
         <ImageView
             android:id="@+id/phase_icon"
