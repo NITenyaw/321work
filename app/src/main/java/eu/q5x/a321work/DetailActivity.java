@@ -2,6 +2,7 @@ package eu.q5x.a321work;
 
 
 import android.Manifest;
+import android.annotation.TargetApi;
 import android.app.ActionBar;
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -9,6 +10,7 @@ import android.content.res.AssetManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.location.LocationProvider;
+import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -35,19 +37,10 @@ import us.feras.mdv.MarkdownView;
 
 
 public class DetailActivity extends AppCompatActivity {
-    LocationManager mLocationManager;
-
-    final private int REQUEST_CODE_ASK_MULTIPLE_PERMISSIONS = 124;
-
-    private static final int LOCATION_REFRESH_TIME = 10000;
-    private static final int LOCATION_REFRESH_DISTANCE = 100;
-
     public static final String SUBTASK_ID = "subtaskId";
-    public static final String CATEGORY = "category";
 
     private MapView mapView;
     private MapController mapController;
-    private ItemizedOverlay<OverlayItem> locationOverlay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +78,7 @@ public class DetailActivity extends AppCompatActivity {
         }
     }
 
+    /*
     private void readCSV() {
         List resultList = new ArrayList();
         InputStream contentSteam = getResources().openRawResource(R.raw.poi_fr);
@@ -100,16 +94,17 @@ public class DetailActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+    */
 
     private void addPoints() {
 
-        ArrayList<OverlayItem> items = new ArrayList<OverlayItem>();
+        ArrayList<OverlayItem> items = new ArrayList<>();
         // Put overlay icon a little way from map centre
         GeoPoint point = new GeoPoint(48.0,7.0);
         items.add(new OverlayItem("Here", "SampleDescription", point));
 
         /* OnTapListener for the Markers, shows a simple Toast. */
-        locationOverlay = new ItemizedIconOverlay<OverlayItem>(items,
+        ItemizedOverlay<OverlayItem> locationOverlay = new ItemizedIconOverlay<>(items,
                 new ItemizedIconOverlay.OnItemGestureListener<OverlayItem>() {
                     @Override
                     public boolean onItemSingleTapUp(final int index,
@@ -119,12 +114,13 @@ public class DetailActivity extends AppCompatActivity {
                                 "Beratungsstelle: '" + item.getTitle(), Toast.LENGTH_LONG).show();
                         return true; // We 'handled' this event.
                     }
+
                     @Override
                     public boolean onItemLongPress(final int index,
                                                    final OverlayItem item) {
                         Toast.makeText(
                                 DetailActivity.this,
-                                "Item '" + item.getTitle() ,Toast.LENGTH_LONG).show();
+                                "Item '" + item.getTitle(), Toast.LENGTH_LONG).show();
                         return false;
                     }
                 }, this.getApplicationContext());
@@ -132,21 +128,16 @@ public class DetailActivity extends AppCompatActivity {
         mapView.invalidate();
     }
 
+    @TargetApi(Build.VERSION_CODES.M)
     private void checkPermissions() {
         List<String> permissions = new ArrayList<>();
-        String message = "osmdroid permissions:";
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            permissions.add(Manifest.permission.ACCESS_FINE_LOCATION);
-            message += "\nLocation to show user location.";
-        }
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             permissions.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
-            message += "\nStorage access to store map tiles.";
         }
         if (!permissions.isEmpty()) {
-            Toast.makeText(this, message, Toast.LENGTH_LONG).show();
             String[] params = permissions.toArray(new String[permissions.size()]);
-            requestPermissions(params, REQUEST_CODE_ASK_MULTIPLE_PERMISSIONS);
-        } // else: We already have permissions, so handle as normal
+            int REQUEST_CODE_ASK_PERM = 124;
+            requestPermissions(params, REQUEST_CODE_ASK_PERM);
+        }
     }
 }
