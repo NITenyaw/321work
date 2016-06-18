@@ -13,9 +13,6 @@ import eu.q5x.a321work.Model.Phase;
 
 public class PhaseActivity extends AppCompatActivity {
     private PhaseActivity activity = this;
-    private RecyclerView recyclerView;
-    private RecyclerView.Adapter adapter;
-    private RecyclerView.LayoutManager layoutManager;
 
     private PhaseAdapter.OnItemClickListener listener =
             new PhaseAdapter.OnItemClickListener() {
@@ -32,18 +29,18 @@ public class PhaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phase);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         if (recyclerView != null) {
             // use this setting to improve performance if you know that changes
             // in content do not change the layout size of the RecyclerView
             // recyclerView.setHasFixedSize(true);
 
             // use a linear layout manager
-            layoutManager = new LinearLayoutManager(this);
+            RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
             recyclerView.setLayoutManager(layoutManager);
 
             // specify an adapter (see also next example)
-            adapter = new PhaseAdapter(WorkApp.getPhases(), listener);
+            RecyclerView.Adapter adapter = new PhaseAdapter(WorkApp.getPhases(), listener);
             recyclerView.setAdapter(adapter);
         }
     }
