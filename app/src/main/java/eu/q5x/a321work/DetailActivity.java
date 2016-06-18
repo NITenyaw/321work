@@ -30,6 +30,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 import eu.q5x.a321work.Model.SubTask;
@@ -63,7 +64,7 @@ public class DetailActivity extends AppCompatActivity {
 
             checkPermissions();
 
-            String category = subTask.category;
+            HashSet<String> category = subTask.category;
             mapView = (MapView) findViewById(R.id.mapview);
             if (mapView != null) {
                 mapView.setTileSource(TileSourceFactory.MAPNIK);
