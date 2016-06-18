@@ -2,6 +2,7 @@
   {
     "title": "Preparation",
     "iconId": "preparation",
+    "order": 100,
     "tasks": [
       {
         "id": "exampletask1",
@@ -25,16 +26,19 @@
   {
     "title": "Work",
     "iconId": "work",
-    "id": "phase_work"
+    "id": "phase_work",
+    "order": 200
   },
   {
     "title": "Ausbildung",
     "iconId": "ausbildung",
-    "id": "phase_ausbildung"
+    "id": "phase_ausbildung",
+    "order": 300
   },
   {
     "title": "Studium",
     "iconId": "studium",
-    "id": "phase_studium"
+    "id": "phase_studium",
+    "order": 400
   }
 ]

@@ -5,6 +5,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.LocationManager;
+import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -73,7 +74,9 @@ public class DetailActivity extends AppCompatActivity {
         if (!permissions.isEmpty()) {
             Toast.makeText(this, message, Toast.LENGTH_LONG).show();
             String[] params = permissions.toArray(new String[permissions.size()]);
-            requestPermissions(params, REQUEST_CODE_ASK_MULTIPLE_PERMISSIONS);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                requestPermissions(params, REQUEST_CODE_ASK_MULTIPLE_PERMISSIONS);
+            }
         } // else: We already have permissions, so handle as normal
     }
 }
