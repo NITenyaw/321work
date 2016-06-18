@@ -1,0 +1,176 @@
+{
+  "title": "Apply for Asylum",
+  "id": "asylum",
+  "order": 100,
+  "tasks": [
+    {
+      "id": "asylum-reppub",
+      "title": "Report to a Public Authority",
+      "subtitle": "",
+      "order": 10,
+      "subTasks": [
+        {
+          "id": "asylum-reppub-1",
+          "title": "Report to a public authority such as the police",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "asylum-reppub-2",
+          "title": "Say that you’d like to apply for asylum on your strengths",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "asylum-reppub-3",
+          "title": "Follow their directions, you’ll be referred to a Reception Centre",
+          "order": 3,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "reccen",
+      "title": "Go to your nearest Reception Centre",
+      "subtitle": "",
+      "iconId": "",
+      "order": 20,
+      "subTasks": [
+        {
+          "id": "reccen-1",
+          "title": "Go to the nearest Reception Centre for asylum seekers",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "reccen-2",
+          "title": "Receive a certificate of registration as an asylum seeker \n(“Bescheinigung über die Meldung als Asylsuchende“ )",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "reccen-3",
+          "title": "Give information about your identity such as your passport or birth certificate",
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "reccen-4",
+          "title": "Get Temporary Residences Permit (“Aufenthaltsgestattung”), this is your allowance to stay in the country",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "reccen-5",
+          "title": "Receive your federal state allocation",
+          "order": 4,
+          "contribution": 1,
+          "description": "- You cannot choose which federal state to stay in. You will be allocated accommodation in a federal state.This decision is binding.\\n (All asylum seekers need to be divided evenly among the 16 federal states so that requests for protection can be processed quickly.)\\n\\n\\n \r\n - The Federal Office for Migration and Refugees (Bundes- amt für Migration und Flüchtlinge – BAMF), which decides on your asylum application, has offices in all 16 federal states.\r\n"
+        }
+      ]
+    },
+    {
+      "id": "go-reccen",
+      "title": "Go straight to the Reception Centre to which you are assigned",
+      "subtitle": "",
+      "iconId": "",
+      "order": 30,
+      "subTasks": [
+        {
+          "id": "go-reccen-1",
+          "title": "Locate the Reception Centre for your subsistence, accommodation and healthcare",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "go-reccen-2",
+          "title": "Get information there about the next steps in the procedure for your asylum application",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "go-reccen-3",
+          "title": "Ask a Reception Centre counselor about the BAMF office that is dealing with your case.",
+          "order": 3,
+          "contribution": 1,
+          "decription": "- It is usually close to the Reception Centre.\\n Only in this Reception Centre are you guaranteed a means of subsistence.\r\n"
+        }
+      ]
+    },
+    {
+      "id": "sub-asylum",
+      "title": "Submit your asylum application at the BAMF office",
+      "subtitle": "",
+      "iconId": "",
+      "order": 40,
+      "subTasks": [
+        {
+          "id": "sub-asylum-1",
+          "title": "Gather all personal documents \n(passport, birth certificate etc.)",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "sub-asylum-2",
+          "title": "Gather all travel documents \n(tickets, receipts etc.)",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "sub-asylum-3",
+          "title": "Submit your asylum application in person at the BAMF office.\n The office will keep a record of your personal data.",
+          "order": 3,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "rec-dec",
+      "title": "Receive the decision for your asylum application",
+      "subtitle": "",
+      "iconId": "",
+      "order": 40,
+      "subTasks": [
+        {
+          "id": "rec-dec-1",
+          "title": "Ask the BAMF office to check if Germany or a different country is responsible for your asylum application.",
+          "order": 1,
+          "contribution": 1,
+          "description": "- This check is based on the Dublin Regulation and is applicable in the countries of the European Union (EU), Norway, Iceland, Switzerland and Liechtenstein.\r\n"
+        },
+        {
+          "id": "rec-dec-2",
+          "title": "Receive assessment of your asylum application if Germany is in charge of your application",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "rec-dec-3",
+          "title": "Prepare for being interviewed in person by BAMF staff, you’ll be asked to give your reasons for seeking asylum.",
+          "order": 3,
+          "contribution": 1,
+          "description": "- Interpreters will be available who are sworn to confidentiality.\r\n"
+        },
+        {
+          "id": "rec-dec-4",
+          "title": "Arrange for a lawyer to be present at your hearing.",
+          "order": 4,
+          "contribution": 1
+        },
+        {
+          "id": "rec-dec-5",
+          "title": "After the hearing, ask the BAMF office to check whether you are eligible for asylum in Germany based on the reasons you have given.",
+          "order": 5,
+          "contribution": 1
+        },
+        {
+          "id": "rec-dec-6",
+          "title": "Receive written notification from the BAMF office on the decision of your asylum application",
+          "order": 6,
+          "contribution": 1,
+          "description": "- If your application is judged to be valid, you will be issued with a temporary residence permit. \\n\r\n - After three years you will be issued with a permanent settlement permit if your eligibility criteria still apply.\\n\r\n - If the final decision is to refuse your application, you will be required to leave Germany by the date specified. If you fail to leave within the specified period, you will be repatriated by force if necessary."
+        }
+      ]
+    }
+  ]
+}
