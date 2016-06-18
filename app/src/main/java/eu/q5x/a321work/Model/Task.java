@@ -17,4 +17,5 @@ public class Task {
     public Set<String> dependencies;
     public ArrayList<SubTask> subTasks;
 
+
 }
