@@ -20,15 +20,15 @@ public class Impressum extends AppCompatActivity {
 
         MarkdownView impressum_text = (MarkdownView) findViewById(R.id.impressum_text);
         StringBuilder impressum = new StringBuilder();
-        impressum.append("This app is developed by **321Work!** \n");
+        impressum.append("This app is developed by **321Hack!** \n");
         impressum.append("It was developed in the context of the **Hackathon 2016** in Freiburg. \n");
         impressum.append("Involved in developing this app: \n");
         impressum.append("**Lucas Spohn, Jérôme Meinke, Benedikt Throner, Jan Vogt, Marcel Gangwisch, Patrick Bastien und Semih Volkert**");
         impressum_text.loadMarkdown(impressum.toString());
 
 
-        TextView license = (TextView) findViewById(R.id.license);
-        license.setText("The MIT License (MIT)\n" +
+        MarkdownView license = (MarkdownView) findViewById(R.id.license);
+        license.loadMarkdown("The MIT License (MIT)\n" +
                 "\n" +
                 "Copyright (c) 2016 Lucas Spohn, Jérôme Meinke, Benedikt Throner, Jan Vogt, Marcel Gangwisch, Patrick Bastien und Semih Volkert\n" +
                 "\n" +

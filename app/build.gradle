@@ -28,6 +28,5 @@ dependencies {
     compile 'us.feras.mdv:markdownview:1.1.0'
     compile 'com.fasterxml.jackson.core:jackson-databind:2.7.0'
     compile 'org.osmdroid:osmdroid-android:5.2@aar'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha3'
     testCompile 'junit:junit:4.12'
 }

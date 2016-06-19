@@ -67,7 +67,8 @@ public class PhaseAdapter extends RecyclerView.Adapter<PhaseAdapter.ViewHolder> 
         holder.progressBar.setProgress(phase.getProgress());
 
         Context context = holder.icon.getContext();
-        int id = context.getResources().getIdentifier(phase.id, "mipmap", context.getPackageName());
+        String iconId = phase.id.replaceAll("-", "").toLowerCase();
+        int id = context.getResources().getIdentifier(iconId, "mipmap", context.getPackageName());
         holder.icon.setImageResource(id);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

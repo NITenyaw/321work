@@ -13,18 +13,18 @@
       {
         "id": "prepare-learnGerman",
         "title": "Learn German",
-        "subtitle": "by signing up for an virtually-free Integration Course",
+        "subtitle": "by signing up for an virtually-free special Integration Course",
         "order": 10,
         "subTasks": [
           {
             "id": "prepare-learnGerman-1",
-            "title": "You MUST have your residence permit or temporary suspension of deportation\nYou also MUST be from Iran, Iraq, Syria or Eritrea",
+            "title": "Do you have a residence permit or temporary suspension of deportation\nYou also must be from Iran, Iraq, Syria or Eritrea",
             "order": 1,
             "contribution": 0
           },
           {
             "id": "prepare-learnGerman-2",
-            "title": "File an application to BAMF headquarters\nFor\nadmittance to an integration course.",
+            "title": "File an application to BAMF headquarters\nFor admittance to the integration course.",
             "dependencies": [
               "prepare-learnGerman-1"
             ],
@@ -114,7 +114,7 @@
           },
           {
             "id": "prepare-community-5",
-            "title": "Participate in community events \ne.g. intercultural\ntours, German conversation groups, and sports events",
+            "title": "Participate in community events \ne.g. intercultural tours, German conversation groups, and sports events",
             "order": 5,
             "contribution": 1
           }
@@ -128,7 +128,7 @@
         "subTasks": [
           {
             "id": "prepare-bankAccount-1",
-            "title": "Gather the documents needed to open a bank account\ne.g. passport, certificate of residency, optional a pay statement from your employer and work permit)",
+            "title": "Gather the documents needed to open a bank account\ne.g. Passport, certificate of residency, optional a pay statement from your employer and work permit",
             "order": 1,
             "contribution": 1
           },
@@ -164,7 +164,7 @@
           },
           {
             "id": "prepare-bankAccount-7",
-            "title": "Return to the bank of your choice with your\ntranslator or advisor",
+            "title": "Return to the bank of your choice with your translator or advisor",
             "order": 7,
             "contribution": 1
           },
@@ -176,7 +176,7 @@
           },
           {
             "id": "prepare-bankAccount-9",
-            "title": "Received your EC card in the mail",
+            "title": "Receive your EC card in the mail",
             "dependencies": [
               "prepare-bankAccount-8"
             ],
@@ -193,40 +193,37 @@
         "subTasks": [
           {
             "id": "prepare-SIMcard-2",
-            "title": "Go to an Advisory Center to find someone to\ntranslate for you at the store",
+            "title": "Go to an Advisory Center to find someone to translate for you at the store",
             "order": 2,
             "contribution": 1
           },
           {
             "id": "prepare-SIMcard-3",
-            "title": "For a prepaid card, go to the supermarket\nThey usually have the cheapest offers",
+            "title": "For a prepaid card, go to the supermarket\nThey usually have the cheapest offers.",
             "order": 3,
             "contribution": 1
           },
           {
             "id": "prepare-SIMcard-4",
-            "title": "For a postpaid contract, go to an smartphone or electronics store\nYou'll need your residency permit",
+            "title": "For a postpaid contract, go to an smartphone or electronics store\nYou'll need your residency permit.",
             "order": 4,
             "contribution": 1
           },
           {
             "id": "prepare-SIMcard-5",
-            "title": "Ask the store salesperson for information about\nbuying a SIM Card",
-            "dependencies": [
-              "prepare-learnGerman-3"
-            ],
+            "title": "Ask the store salesperson for information about buying a SIM Card",
             "order": 5,
             "contribution": 1
           },
           {
             "id": "prepare-SIMcard-6",
-            "title": "Go to more than one store that sells SIM Cards to compare offers\nAn allnet-flatrate should be below 20 EUR/month",
+            "title": "Go to more than one store that sells SIM Cards to compare offers\nAn allnet-flatrate should be below 20 EUR/month.",
             "order": 6,
             "contribution": 1
           },
           {
             "id": "prepare-SIMcard-7",
-            "title": "Choose the contract with the best terms for\nyou",
+            "title": "Choose the contract with the best terms for you\nYou can also have a look at online offers.",
             "order": 7,
             "contribution": 1
           },
@@ -276,25 +273,25 @@
           },
           {
             "id": "prepare-help-3",
-            "title": "Your Application for asylum has been accepted or\nyou have lived in Germany for 15 months\nFor professional help in non-emergency situations.",
+            "title": "You have been granted asylum or you have lived in Germany for 15 months\nFor professional help in non-emergency situations.",
             "order": 3,
             "contribution": 0
           },
           {
             "id": "prepare-help-4",
-            "title": "Go to an Advisory Center to find someone to translate for you\nAt the doctor�s office or trauma center",
+            "title": "Go to an Advisory Center to find someone to translate for you",
             "order": 4,
             "contribution": 1
           },
           {
             "id": "prepare-help-5",
-            "title": "Go to a local doctor�s office or trauma center with your translator or advisor",
+            "title": "Go to a local doctor's office or trauma center with your translator or advisor",
             "order": 5,
             "contribution": 1
           },
           {
             "id": "prepare-help-6",
-            "title": "Set up follow up appointments with your doctor or\ncounselor\nWith the help of your translator or advisor",
+            "title": "Set up follow up appointments with your doctor or counselor\nWith the help of your translator or advisor.",
             "dependencies": [
               "prepare-help-5"
             ],

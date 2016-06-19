@@ -85,7 +85,8 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
         holder.title.setText(task.title);
 
         Context context = holder.icon.getContext();
-        int id = context.getResources().getIdentifier(task.id, "mipmap", context.getPackageName());
+        String iconId = task.id.replaceAll("-", "").toLowerCase();
+        int id = context.getResources().getIdentifier(iconId, "mipmap", context.getPackageName());
         holder.icon.setImageResource(id);
         holder.header.setBackgroundColor(0);
 
@@ -106,11 +107,6 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
                     notifyDataSetChanged();
                 }
             });
-        /*
-        Context context = imageView.getContext();
-        int id = context.getResources().getIdentifier("picture0001", "drawable", context.getPackageName());
-        holder.icon.setImageResource(id);
-        */
     }
 
     // Return the size of your dataset (invoked by the layout manager)
