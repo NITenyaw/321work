@@ -1,136 +1,132 @@
-X;Y;ADRESSE_HA;ADRESSE_LA;ADRESSE_LO;ADRESSE_PL;ADRESSE_ST;BEZEICHN_1;BEZEICHN_3;KAT0;LINKS_URL
-7.8481515;47.9883296;17;47.988329600000000;7.848151499999970;79102;Günterstalstraße;"Di, Do 14-16 Uhr";Kinderbüro;Kinder und Jugendliche;http://www.freiburg.de/kinderbuero
-7.8517806;47.9892409;2;47.989240899999999;7.851780599999980;79102;Uhlandstraße;Mo-Fr 10-14 Uhr;Jugendbildungswerk Freiburg e. V.;Kinder und Jugendliche;http://www.jbw.de
-7.85365550000006;47.9975672;1;47.997567199999999;7.853655500000060;79098;Auf der Zinnen;;Amt für Wohnraumversorgung: Vermittlung von Privatwohnraum für Flüchtlinge;Flüchtlinge;
-7.8520221;48.0116545;36;48.011654499999999;7.852022100000000;79106;Komturstraße;"Mo-Do 9-12 Uhr, Mo-Do 14-17 Uhr";Anlauf- und Vermittlungsstelle für Flüchtlinge aus dem Stadtgebiet Freiburg;Flüchtlinge;
-7.86503210000001;48.0036985;12;48.003698499999999;7.865032100000010;79104;Immentalstraße;"Mo-Do 9-12 Uhr, Mo-Do 14-17 Uhr";Caritas Flüchtlingsdienst;Flüchtlinge;http://www.caritas-freiburg.de/fachdienst-migration.html
-7.85327;47.99495;30;47.994950000000003;7.853270000000070;79098;Münsterplatz;"Mo-Do 9-12 Uhr, 13-17 Uhr";Kulturamt Stadt Freiburg;Kultur und Medien;http://www.freiburg.de/kulturamt
-7.8550148;47.9903146;6;47.990314599999998;7.855014799999940;79102;Schwarzwaldstraße;"Mo-Fr 9.30-12 Uhr, 16-18 Uhr/p>";Patronato Acli Freiburg (Christliche Vereinigung italienischer Arbeitnehmer);Ankommen in Freiburg;http://www.acli.de
-7.86526;48.33907;31;48.339070000000000;7.865260000000030;77933;Lotzbeckstraße;;Industrie- und Handelskammer Südlicher Oberrhein Hauptgeschäftsstelle Lahr;"Arbeit, Beruf, Ausbildung";http://www.suedlicher-oberrhein.ihk.de
-7.8226307;48.0049455;8;48.004945499999998;7.822630699999990;79110;Sundgauallee;Mo-Do. 10-20 Uhr Mo-Do. 10-20 UIhrMo-Do. 10-20 UIhr Mo-Do. 10-20 Uhr Di 14 Uhr-17 UhrFr 9 Uhr-12 Uhr;MBE Caritasverband Freiburg-Stadt;Ankommen in Freiburg;
-7.8492296;47.9906523;5;47.990652300000001;7.849229599999940;79098;Dreisamstraße;"Mo 9 Uhr-12 Uhr, Mi 10 Uhr-15 Uhr und nach Vereinbarung";MBE Deutsches Rotes Kreuz;Ankommen in Freiburg;
-7.8102699;47.9941531;7;47.994153099999998;7.810269899999980;79114;Krozinger Straße;"Di 14-17; Do 10-12 Uhr";MBE Diakonisches Werk Freiburg;Ankommen in Freiburg;
-7.8492296;47.9906523;5;47.990652300000001;7.849229599999940;79098;Dreisamstraße;"Mo 9 Uhr-12 Uhr, Mi 10 Uhr-15 Uhr und nach Vereinbarung";MBE Südwind Freiburg e. V.;Ankommen in Freiburg;
-7.85486;47.98805;39;47.988050000000001;7.854860000000030;79102;Hildastraße;"Mo, Do, 10-14 Uhr; Di, Mi 14-16 Uhr";Bildungswerk der Erzdiözese;Sprache;http://www.sprach-undcomputerkurse.de
-7.79328;47.99795;31-49;47.997950000000003;7.793279999999980;79111;Rieselfeldallee;"Mo-Do 8-17 Uhr, Fr 8-16 Uhr";Deutsche Angestellten-Akademie (DAA) Freiburg;Sprache;http://www.daa.de
-7.79328;47.99795;31;47.997950000000003;7.793279999999980;79111;Rieselfeldallee;telefonische Beratung und persönliche Termine nach Vereinbarung;Integrationskurse;Sprache;http://www.daa.de
-7.8115101;48.021186;5;48.021186000000007;7.811510099999960;79110;Linnstraße;nach Vereinbarung;Fördergesellschaft der Handwerkskammer Freiburg;"Arbeit, Beruf, Ausbildung";http://www.foege-hwk.de
-7.84882830000004;47.9988006;37;47.998800600000003;7.848828300000040;79098;Friedrichring;Di 14 Uhr oder nach Absprache;Berlitz Deutschland GmbH;Sprache;http://www.berlitz.de/freiburg
-7.83758250000005;47.9867967;61;47.986796699999999;7.837582500000050;79100;Basler Straße;Mo: 14-16 Uhr;"""Unterschiede anerkennen - Vielfalt leben""";"Ehe, Familien, Partnerschaft";http://www.vielfalt-freiburg.net
-7.8226307;48.0049455;;48.004945499999998;7.822630699999990;79110;Sundgauallee 8 (Ecke Berliner Allee);Do 9.30-12.30 Uhr;FrauenSTÄRKEN im Quartier: Stadtteil Betzenhausen;Frauen und Mädchen;
-7.8977;47.9837;50;47.983699999999999;7.897699999999990;79106;Fehrenbachallee;Mo 9-12 Uhr;FrauenSTÄRKEN im Quartier: Stadtteil Stühlinger;Frauen und Mädchen;
-7.8371037;47.9843027;63;47.984302700000001;7.837103699999940;79100;Lorettostraße;Mo-Do 9-12 Uh;"Diakonisches Werk, Wellcome";"Ehe, Familien, Partnerschaft";http://www.wellcome-online.de
-7.84675;47.98812;14;47.988120000000002;7.846749999999930;79102;Schwarzwaldstraße;"Mo-Mi 10-12 Uhr; Do 15-17 Uhr nur nach vorheriger telefonischer Terminvereinbarung";Helferkreis für Mutter und Kind e. V.;Frauen und Mädchen;http://www.helferkreis-freiburg.de
-7.8226307;48.0049455;8;48.004945499999998;7.822630699999990;79110;Sundgauallee;;Jugendmigrationsdienst (JMD);Ankommen in Freiburg;http://www.jugendmigrationsdienst.de
-7.8386677;48.003437899999987;12;48.003437899999987;7.838667699999970;79106;Büggenreuterstraße;"Mo, Di, Do 10-13 Uhr, 15-17 Uhr, Fr 10-13 Uhr";AIDS-Hilfe Freiburg e. V.;Gesundheit;http://www.aids-hilfe-freiburg.de
-7.8321302;48.0015472;14;48.001547199999997;7.832130199999940;79106;Fehrenbachallee;"Di, Do 10.30 Uhr - 12.00 Uhr, sowie nach Vereinbarung";"Geschäftsführende Schulleitung berufliche Schulen, Max-Weber-Schule";Schule;http://max-weber-schule.de
-7.8583;48.02279;346;48.022790000000008;7.858299999999990;79108;Zähringer Straße;Di 15-17 Uhr;FrauenSTÄRKEN im Quartier: Stadtteil Zähringen;Frauen und Mädchen;
-7.8488182;47.9948337;5;47.994833700000001;7.848818199999980;79098;Universitätsstraße;nach Vereinbarung;Sprachlehrinstitut der Albert-Ludwigs-Universität Freiburg (SLI);Studium;http://www.sli.uni-freiburg.de
-7.857562;48.0047295;14;48.004729500000003;7.857562000000030;79104;Jacobistr.;nach Vereinbarung;Amt für Migration und Integration - Abteilung 2 Integration;Flüchtlinge;
-7.84471350000001;47.9978182;5;47.997818199999998;7.844713500000010;79098;Poststraße;Mo-Fr 9-12 Uhr und nach Vereinbarung;"Jule - Jugendberufshilfe für junge Mütter, IN VIA in der Erzdiözese Freiburg e. V.";Flüchtlinge;http://www.invia-freiburg.de
-7.84683;47.9821;6;47.982100000000003;7.846829999999950;79100;Schwaighofstr;;Psychotherapeutische Anlaufstelle für Migrant/-innen Freiburg (PAMF);;http://www.psf.dpv-psa.de/pamf.html
-7.8977;47.9837;25;47.983699999999999;7.897699999999990;79117;Kappler Straße;Di 9-12 Uhr;FrauenSTÄRKEN im Quartier: Stadtteil Littenweiler;Frauen und Mädchen;
-7.86995;47.99273;77;47.992729999999987;7.869950000000020;79106;Karteuserstraße;"Mo 9-12 Uhr, 14-18 UhrDi 8-12 Uhr, 14-17 UhrMi 9-12 Uhr, 14-18 UhrDo 8-12 Uhr, 14-17 UhrFr 9-12 Uhr, 14-16 Uhr";"ANKER-Gruppe für Kinder, die mit ihren Eltern geflohen sind";Flüchtlinge;http://www.maks-freiburg.de
-7.81838;47.99218;9b;47.992179999999998;7.818379999999930;79115;Melanchthonweg;Di 9.30-12.30 Uhr;FrauenSTÄRKEN im Quartier: Stadtteil Haslach;Frauen und Mädchen;
-7.83758250000005;47.9867967;61;47.986796699999999;7.837582500000050;79100;Basler Str.;bitte telefonisch oder per E-Mail einen Termin vereinbaren;"Elele ileriye - Hand in Hand gemeinsam voran, pro familia Freiburg";;
-7.83802;47.99272;11-13;47.992719999999998;7.838020000000030;79098;Schnewlinstraße;;Industrie- und Handelskammer Südlicher Oberrhein;"Arbeit, Beruf, Ausbildung";http://www.suedlicher-oberrhein.ihk.de
-7.8366691;47.9950079;73;47.995007899999997;7.836669099999990;79098;Klarastraße;;Ahmadiyya Muslim Jamaat - Freiburg;Migrantenvereine;http://www.ahmadiyya-freiburg.de
-7.86503210000001;48.0036985;12;48.003698499999999;7.865032100000010;79104;Immentalstraße;nach Vereinbarung;Projektverbund Baden - Arbeit und Ausbildung für Flüchtlinge;Flüchtlinge;http://www.projektverbund-baden.de
-7.83802;47.99272;11-13;47.992719999999998;7.838020000000030;79098;Schnewlinstraße;"Mo-Do 09-16:30 Uhr, Fr 09-16 Uhr; nach Absprache";Industrie- und Handelskammer Südlicher Oberrhein;Flüchtlinge;http://www.suedlicher-oberrhein.ihk.de
-7.8558194;47.9901601;9;47.990160099999997;7.855819399999970;79098;Poststraße;Mo-Fr 9-12 Uhr und nach Vereinbarung;Internationaler Mädchen- und Frauentreff;Frauen und Mädchen;http://www.invia-freiburg.de
-7.8244917;48.0007785;9f;48.000778500000003;7.824491699999950;79114;Bissierstr.;;"Get Together Projekt, Deutsches Rotes Kreuz Kreisverband Freiburg";Flüchtlinge;http://www.drk-freiburg.de/angebote/migration_-_suchdienst/get_together.html
-7.8226307;48.0049455;48;48.004945499999998;7.822630699999990;79110;Habichtweg;Mi 9.30-12.30 Uhr;FrauenSTÄRKEN im Quartier: Stadtteil Landwasser;Frauen und Mädchen;
-7.85365550000006;47.9975672;1;47.997567199999999;7.853655500000060;79098;Auf der Zinnen;"Mo 8-11.30 Uhr, Mi 8-11.30 Uhr, Do 8-11.30 Uhr sowie nach Terminvereinbarung";Amt für Wohnraumversorgung;Wohnen;
-7.8520221;48.0116545;12;48.011654499999999;7.852022100000000;79104;Immentalstr.;;Erstanlaufstelle und Kompetenzzentrum Anerkennungsberatung;"Arbeit, Beruf, Ausbildung";
-7.8102699;47.9941531;7;47.994153099999998;7.810269899999980;79114;Krozinger Straße;"Mo, Mi, Do 10-12.30 Uhr und nach Vereinbarung";Diakonisches Werk Freiburg: Arbeitslosenberatung;"Arbeit, Beruf, Ausbildung";http://www.goethe2.de
-7.8554475;48.0107351;9;48.010735099999998;7.855447499999970;79104;Habsburgerstraße;"Di, Mi, Do 10-15 UhrTermine nur n. vorheriger Vereinbarung";friga e. V.;"Arbeit, Beruf, Ausbildung";http://www.lagalo.de
-7.85327140000004;47.9960214;17;47.996021399999997;7.853271400000040;79098;Münsterplatz;"Di 10-13 u. 14-18 Uhr; Mi 14-17 Uhr; Do 15-19 Uhr; Fr 14-17 Uhr";Wegweiser Bildung - WeBi;"Arbeit, Beruf, Ausbildung";http://www.leif-freiburg.de/webi
-7.84732;47.99618;12;47.996180000000003;7.847319999999970;79098;Rotteckring;"Mo-Do 10-12; Mo, Di, Do 15-17 Uhr";Volkshochschule Freiburg;Sprache;http://www.vhs-freiburg.de
-7.8557035;48.000137;16;48.000137000000002;7.855703500000000;79104;Karlstraße;"Jeden Dienstag 10-12 Uhr; größere Gruppen: bitte einen Sondertermin unter 0761/ 201-7251 oder 201-7019 vereinbaren.";Karlschule Freiburg;Schule;
-7.8481;47.99927;39;47.999270000000003;7.848099999999930;79098;Friedrichstraße;;International Office - Büro für internationale Beziehungen;Studium;https://www.international.uni-freiburg.de/
-7.849;47.99605;2-4;47.996049999999997;7.848999999999930;79098;Rathausplatz;"Mo, Di, Do, Fr 8-12 Uhr, Mi 9-17 Uhr";Standesamt;"Ehe, Familien, Partnerschaft";http://www.freiburg.de/standesamt
-8.404502200000019;49.0101995;10;49.010199499999999;8.404502200000019;76113;Schlossplatz;;L-Bank;"Ehe, Familien, Partnerschaft";
-7.8532381;47.9976811;143;47.997681100000001;7.853238100000000;79098;Kaiser-Joseph-Straße;"Mo 10-15 Uhr; Mi, Fr 8-11 Uhr";IBV Kinderbetreuung;"Ehe, Familien, Partnerschaft";http://www.freiburg.de/kinderbetreuung
-7.8454405;47.9983177;17;47.998317700000001;7.845440500000000;79098;Colombistraße;"Mo, Di, Mi, Fr 9-12 Uhr; Mo, Di, Mi 14-16.30 Uhr";"Sozialdienst katholischer Frauen Schwangeren- und Familienberatung, Guter Start ins Leben";"Ehe, Familien, Partnerschaft";http://www.skf-freiburg.de
-7.83805910000001;47.9958274;3;47.995827400000003;7.838059100000010;79106;Engelbergerstraße;Offene Sprechzeit: Di-Do 15-18 Uhr oder Termine nach Vereinbarung;Jugendberatung Freiburg e. V.;Kinder und Jugendliche;http://www.jugendberatung-freiburg.de
-7.81535;48.0144;2;48.014399999999988;7.815349999999970;79110;Leisnerstraße;"Mo-Fr 9-12 Uhr; Mo, Mi 14-16 Uhr";Kompetenzzentrum Frohe Hilfen;"Ehe, Familien, Partnerschaft";http://www.freiburg.de/fruehehilfen
-7.85594;48.00358;4;48.003579999999999;7.855940000000030;79104;Wölflinstraße;Termine nur nach Vereinbarung;Frauen-Beratungsstelle bei häuslicher Gewalt;Frauen und Mädchen;http://www.frauenhaus-freiburg.de
-7.84675;47.98812;8;47.988120000000002;7.846749999999930;79100;Basler Straße;;Anlauf- und Fachberatungsstelle Frauenhorizonte - gegen sexuelle Gewalt e. V.;Frauen und Mädchen;http://www.frauenhorizonte.de
-7.84675;47.98812;5672;47.988120000000002;7.846749999999930;79023;Postfach;"Mo-Fr 8-18 Uhr; nachts und am Wochenende nimmt die Polizei oder die Telefonseelsorge Kontakt zum Bereitschaftsdienst auf";Frauen- und Kinderschutzhaus;Frauen und Mädchen;http://www.frauenhaus-freiburg.de
-7.8447738;47.9978232;14;47.997823199999999;7.844773799999980;79100;Kronenstraße;"Telefonzeiten: Mo, Mi 13-15 Uhr; Di, Do 10-12 Uhr; Do 16-18 Uhr; Persönliche Termine nach Vereinbarung";Wendepunkt e. V.;Frauen und Mädchen;http://www.wendepunkt-freiburg.de
-7.84189;47.98895;49a;47.988950000000003;7.841890000000030;79102;Kartäuserstraße;Mo-Fr jeweils 9-12 Uhr;Deutscher Kinderschutzbund;Frauen und Mädchen;
-7.8520221;48.0116545;36;48.011654499999999;7.852022100000000;79106;Komturstraße;"Mo-Fr 9-12; Mo, Mi, Do 14-17 Uhr;  Di 14-17 Uhr Termine n. Vereinbarung";Migrationsberatung für erwachsene Zuwanderer im Komturhof;Ankommen in Freiburg;
-7.8474312;47.9980619;4;47.998061900000003;7.847431199999960;79098;Fahnenbergplatz;;Amt für Liegenschaften und  Wohnungswesen (ALW);Wohnen;
-7.84750680000002;47.988248;2;47.988247999999999;7.847506800000020;79100;Basler Straße;;Amt für Migration und Integration: Staatsangehörigkeits- und Ausländerbehörde;Flüchtlinge;
-7.84750680000002;47.988248;2;47.988247999999999;7.847506800000020;79100;Basler Straße;"Mo, Di, Fr 7.30-12 Uhr;Mi 7.30-18 Uhr (18-20 Uhr*)Do 7.30-12 Uhr und 13-16 Uhr;Sa 9.30-12.30 Uhr*";Amt für Bürgerservice und  Informationsverarbeitung;Bürgeramt;
-7.83160640000006;48.0028865;77;48.002886500000002;7.831606400000060;79106;Lehener Straße;"Mo-Fr 7.45-12.30 Uhr; Do 13.30-18 Uhr";Agentur für Arbeit Freiburg;Arbeitsamt;http://www.arbeitsagentur.de
-7.83160640000006;48.0028865;77;48.002886500000002;7.831606400000060;79106;Lehener Straße;"Im Rahmen der Öffnungszeiten; zusätzliche Termine nach Vereinbarung";Jobcenter Freiburg;"Arbeit, Beruf, Ausbildung";http://www.jobcenter-freiburg.de
-7.8426359;47.9982436;11-13;47.998243600000002;7.842635900000000;79098;Bismarckallee;"Im Rahmen der Öffnungszeiten; zusätzlich Termine nach Vereinbarung";Jugendagentur des Jobcenters Freiburg;"Arbeit, Beruf, Ausbildung";http://www.jobcenter-freiburg.de
-7.83160640000006;48.0028865;77;48.002886500000002;7.831606400000060;79106;Lehener Straße;"Mo-Mi 7.45-16.30 Uhr; Do 7.45-18 Uhr; Fr 7.45-12.30 Uhr";Berufsinformationszentrum;"Arbeit, Beruf, Ausbildung";
-7.849;47.99605;2-4;47.996049999999997;7.848999999999930;79098;Rathausplatz;"Mo, Di, Mi, Fr 8.30-12 Uhr; Mo, Mi 13.30-15.30; Do 13.30-18 Uhr";Beratung für Frauen in Berufsfragen;"Arbeit, Beruf, Ausbildung";http://www.frauundberuf.freiburg.de
-7.8102699;47.9941531;7;47.994153099999998;7.810269899999980;79114;Krozinger Straße;Mo-Fr 10-12.30 Uhr und nach Vereinbarung;Diakonisches Werk Freiburg: Gründerzentrum;"Arbeit, Beruf, Ausbildung";http://www.gruenderzentrum-goethe2.de
-7.83231;48.00084;12;48.000839999999997;7.832310000000010;79106;Fehrenbachallee;"Mo, Di, Do, Fr 10-12 Uhr oder nach Vereinbarung";Seniorenbüro;Senioren und Seniorinnen;http://www.freiburg.de/senioren
-7.8225312;48.0062152;2;48.006215200000000;7.822531199999960;79114;Flurstraße;;Deutsches Rotes Kreuz Kreisverband Freiburg e. V.: Gesundheitszentrum Migration;Gesundheit;
-7.84055660000001;47.9929613;12;47.992961299999997;7.840556600000010;79098;Adlerstraße;Di 16.30-18 Uhr;Medinetz;Flüchtlinge;http://medinetz.rasthaus-freiburg.org
-7.84055660000001;47.9929613;12;47.992961299999997;7.840556600000010;79098;Adlerstraße;"Mi 15-18 Uhr, Fr 17-20 Uhr";Südbadisches Aktionsbündnis gegen Abschiebungen (SAGA);Flüchtlinge;http://www.saga.rasthaus-freiburg.org/?Kontakt
-7.85327140000004;47.9960214;17;47.996021399999997;7.853271400000040;79098;Münsterplatz;"Di-Fr 10-19 Uhr; Sa 10-14 Uhr";Stadtbibliothek;Kultur und Medien;http://www.freiburg.de/stadtbibliothek
-7.79215880000004;47.9994151;2;47.999415100000007;7.792158800000040;79111;Maria-von-Rudloff-Platz;"Di, Do, Fr 13-18 Uhr; Mi 10-18 Uhr";Kinder- und Jugendmediothek Rieselfeld;Kultur und Medien;http://www.freiburg.de/stadtbibliothek
-7.84848310000007;47.9920814;268;47.992081399999996;7.848483100000070;79098;Kaiser-Joseph-Straße;;Friedrichsbau-Lichtspiele;Kultur und Medien;http://www.friedrichsbau-kino.de
-7.850117;47.994044300000013;14-16;47.994044300000013;7.850116999999950;79098;Grünwälderstraße;;Harmonie Kino Freiburg;Kultur und Medien;http://www.friedrichsbau-kino.de
-7.84055660000001;47.9929613;12;47.992961299999997;7.840556600000010;79098;Adlerstraße;;Radio Dreyeckland;;http://www.rdl.de
-7.84055660000001;47.9929613;;;;;;;Erstanlaufstelle und Kompetenzzentrum Anerkennungsberatung für den Regierungsbezirk Freiburg;"Arbeit, Beruf, Ausbildung";
-7.82389;48.01383;21;48.013829999999999;7.823890000000010;79110;Falkenbergerstraße;"Di, Fr 9-13; Mi 14-18; Do 9-18 Uhr";Stadtteilbibliothek Mooswald;Kultur und Medien;http://www.freiburg.de/stadtbibliothek
-7.8541669;47.9848895;40;47.984889500000001;7.854166900000000;79102;Urachstraße;;Kommunales Kino im alten Wiehrebahnhof;Kultur und Medien;http://www.koki-freiburg.de
-7.8439496;47.9956445;50;47.995644499999997;7.843949599999970;79098;Bertoldstraße;;CinemaxX;Kultur und Medien;http://www.cinemaxx.de/freiburg
-9.2043445;48.7929247;230;48.792924700000000;9.204344499999930;70190;Neckarstraße;;SWR International;;http://www.swr.de/international/de
-7.85398880000002;47.9963186;6;47.996318600000002;7.853988800000020;79098;Herrenstraße;;Caritasverband Freiburg-Stadt e. V.;Senioren und Seniorinnen;
-7.82385;47.99089;10;47.990890000000000;7.823849999999990;79115;Staudingerstraße;Di-Fr 13-18 Uhr;Stadtteilbibliothek Haslach;Kultur und Medien;http://www.freiburg.de/stadtbibliothek
-7.84555620000003;47.9879421;20;47.987942099999998;7.845556200000030;79100;Basler Straße;"dienstags, 16-18 Uhr";Amnesty International Freiburg;Flüchtlinge;http://www.amnesty-suedbaden.de
-7.8437984;47.9947469;6;47.994746900000003;7.843798399999970;79098;Sedanstraße;"Mo bis Do: 9 bis 12 Uhr, Do: 14 bis 16 Uhr";Service Center Studium - Abteilung International Admissions and Services;Studium;http://www.ias.uni-freiburg.de
-7.86753290000001;47.9883427;58 A;47.988342699999997;7.867532900000010;79117;Schwarzwaldstr.;"Mo-Fr 10-16 Uhr; Einlass bis 15 Minuten vor Ende der Öffnungszeit";Freiburger Tafel e.V.;Flüchtlinge;http://www.freiburger-tafel.de
-7.85724;47.988824400000013;;47.988824400000013;7.857240000000050;79102;Dreikönigstraße 9 / Ecke Talstraße;"Mo 15-17 Uhr; Di 9-12 Uhr; Mi 15-17 Uhr; Do 9-12 Uhr, 15-17 Uhr";"Kleiderladen, Vereinigung Freiburger Sozialarbeit";Flüchtlinge;http://vfs-ev.de/index.php/kleiderladen-und-outfit.html
-7.79005;47.99233;15;47.992330000000003;7.790050000000060;79111;Rimsinger Weg;Mi und Fr 14-15.30 Uhr;"Kleiderkammer, Deutsches Rotes Kreuz";Flüchtlinge;http://www.drk-freiburg.de/angebote/hilfen_in_der_not/kleiderkammer.html
-7.8372647;47.9979172;58;47.997917200000003;7.837264699999990;79106;Guntramstraße;"Mo, Di, Do, Fr 9.30-18.30 Uhr; Mi 9.30-13.00 Uhr; Sa 9.30-14.00 Uhr";"S'Einlädele Freiburg, Stadtmission";Flüchtlinge;http://www.seinlaedele.de/laden
-7.8558194;47.9901601;14;47.990160099999997;7.855819399999970;79102;Schwarzwaldstraße;"Mo-Fr 10-12 Uhr, nur nach Terminvereinbarung";Helferkreis für Mutter und Kind e.V.;Flüchtlinge;http://www.helferkreis-freiburg.de
-7.79359;47.99343;9;47.993429999999996;7.793589999999990;79111;Waltershofener Str.;"Mo-Fr 10-18.30 Uhr, Sa 10-14 Uhr";"Fairkauf - Gebrauchtwarenkaufhaus, Caritas";Flüchtlinge;http://www.caritas-freiburg.de/fairkauf
-7.82691;47.97889;30;47.978890000000000;7.826910000000000;79100;Oltmannsstr.;Mo-Fr 9.30-17.30 Uhr;"Hand-2-Hand, Stadtmission";Flüchtlinge;http://www.stadtmission-freiburg.de/begegnung/marktplatz/holzwerkstatt/verkauf
-7.8532381;47.9976811;143;47.997681100000001;7.853238100000000;79098;Kaiser-Joseph-Straße;"Mo-Do 8-16.30 Uhr, Fr. 8-15.30 Uhr";"Amt für Kinder, Jugend und Familie";Flüchtlinge;
-7.84750680000002;47.988248;2;47.988247999999999;7.847506800000020;79100;Basler Str. 2;;"Führerscheinstelle, Amt für Öffentliche Ordnung";Flüchtlinge;http://www.freiburg.de/buergerservice
-7.8455239;47.9862622;14;47.986262199999999;7.845523899999990;79100;Konradstraße;;Beratungsstellen Freier Träger: Jugendhilfswerk Freiburg e. V;Flüchtlinge;http://www.wi-jhw.de
-7.8494998;47.9897785;42;47.989778500000000;7.849499799999990;79102;Schillerstr. 42;"Mo-Mi 10-13 Uhr; Do 14-16 Uhr";Freiburger Zentrum für Pädagogische Beratung e.V.;Flüchtlinge;http://www.paed-beratungsstelle.de
-7.81535;48.0144;2;48.014399999999988;7.815349999999970;79110;Leisnerstraße;"Mo-Do 8-12 Uhr und 14-16 Uhr; Fr 8 -12 Uhr";"Psychologische Beratungsstelle für Eltern, Kinder und Jugendliche";Flüchtlinge;http://www.freiburg.de/erziehungsberatung
-7.8118083;47.9945337;11;47.994533699999998;7.811808299999940;79114;Krozinger Straße;"Mo, Di, Do, Fr 10-19 Uhr; Mi und Sa 10-14 Uhr";"Spinnwebe - Second-Hand-Center, Diakonie";Flüchtlinge;http://www.die-spinnwebe.de
-7.8505759;47.994639799999987;3;47.994639799999987;7.850575899999970;79098;Salzstraße;"Mo-Fr 8-19 Uhr, Sa 8.30-16 Uhr";"pluspunkt, Kundenzentrum der Freiburger Verkehrs AG (VAG)";Flüchtlinge;http://www.vag-freiburg.de
-7.83231;48.00084;12;48.000839999999997;7.832310000000010;79106;Fehrenbachallee;"Mo-Do 7.30-16.30 Uhr; Fr 7.30-15.30 Uhr";Amt für Soziales und Senioren;;
-7.8478259;47.9859397;41;47.985939700000003;7.847825899999980;79102;Günterstalstr.;Mo-Fr 9-12 Uhr;"Psychosoziale Beratung in Familienkrisen für Eltern, Kinder und Jugendliche";;http://www.psb-freiburg.de
-7.8481515;47.9883296;17;47.988329600000000;7.848151499999970;79102;Günterstalstraße;"Mo-Do 8-12 Uhr und 14-16 Uhr; Fr 8 -12 Uhr";"Psychologische Beratungsstelle für Eltern, Kinder und Jugendliche";Flüchtlinge;http://www.freiburg.de/erziehungsberatung
-7.81535;48.0144;19b;48.014399999999988;7.815349999999970;79114;Krozingerstraße;"Mo-Do 8-12 Uhr und 14-16 Uhr; Fr 8 -12 Uhr";"Psychologische Beratungsstelle für Eltern, Kinder und Jugendliche";Flüchtlinge;http://www.freiburg.de/erziehungsberatung
-7.8525555;47.9947333;19;47.994733300000000;7.852555499999990;79098;Schusterstraße;"in der Regel am Di, Mi, Do 9-12 Uhr";Stadtseniorenrat Freiburg e. V.;Senioren und Seniorinnen;http://www.ssr-freiburg.de
-7.8567634;47.9898676;24;47.989867599999997;7.856763399999980;79102;Schwarzwaldstraße;"Mo, Mi, Fr 9-11.30 UhrDi (Frauenfrühstück) 10-11.30 UhrDo (verschied. Angebote) 10-12.30 Uhr";FreiRaum - Hilfen für Frauen in Wohnungsnot;Frauen und Mädchen;http://www.diakonie-freiburg.de
-7.8371037;47.9843027;63;47.984302700000001;7.837103699999940;79100;Lorettostraße;nach telefonischer Vereinbarung;Diakonisches Werk Freiburg: Allgemeine Sozialberatung und Kurberatung;"Ehe, Familien, Partnerschaft";http://www.diakonie-freiburg.de
-7.84026;47.98496;42;47.984960000000001;7.840259999999940;79100;Lorettostraße;Mo 10.30-12.30 Uhr;Frauen im Südwind Freiburg e. V.;Flüchtlinge;http://www.suedwind-freiburg.de
-7.8454405;47.9983177;17;47.998317700000001;7.845440500000000;79098;Colombistraße;Mo-Fr 9-12 Uhr;"AIDS-Beratung für Frauen & Familien, SkF-Treff Freiburg";Frauen und Mädchen;http://www.skf-freiburg.de
-7.83160640000006;48.0028865;77;48.002886500000002;7.831606400000060;79106;Lehener Straße;"Mo-Fr 9-12.30 Uhr, Do 15-18 Uhr";Welcome Center Freiburg Oberrhein;Ankommen in Freiburg;http://www.welcomecenter-freiburg-oberrhein.de/
-7.8567634;47.9898676;24;47.989867599999997;7.856763399999980;79102;Schwarzwaldstraße;;Äkumenisches Asylforum;Flüchtlinge;http://www.diakonie-freiburg.de
-7.84675;47.98812;8;47.988120000000002;7.846749999999930;79100;Basler Straße;"Mi 9.30-12; Do 15-18 Uhr oder AB, baldiger Rückruf";Frauen- und MädchenGesundheits Zentrum Freiburg e. V. - FMGZ e. V.;Frauen und Mädchen;http://www.fmgz-freiburg.de
-7.8532381;47.9976811;143;47.997681100000001;7.853238100000000;79098;Kaiser-Joseph-Straße;"Mo-Do 8-16.30 Uhr; Fr 8-15.30 Uhr";"Amt für Kinder, Jugend und Familie, Kommunaler Sozialer Dienst (KSD)";"Ehe, Familien, Partnerschaft";
-7.84685430000002;47.9908542;12-16;47.990854200000001;7.846854300000020;79098;Schreiberstraße;"Mo-Di 9-12 Uhr, Do 9-12 Uhr und 13.30-16 Uhr sowie nach telefonischer Terminvereinbarung";Studierendenwerk Freiburg;Studium;http://www.swfr.de
-7.84675;47.98812;8;47.988120000000002;7.846749999999930;79100;Basler Straße;"Mo, Di, Do, Fr 10.30-12.30 Uhr; Mi 14-16 Uhr";Wildwasser e. V.;Frauen und Mädchen;http://www.wildwasser-freiburg.de
-7.84675;47.98812;33;47.988120000000002;7.846749999999930;79106;Friedhofstraße;bei Bedarf;MigraZentrum e. V.;Frauen und Mädchen;http://www.migrazentrum-freiburg.de
-7.8541363;47.992244199999988;2;47.992244199999988;7.854136299999940;79098;Schwabentorring;"Mo 13-16 Uhr; Di, Do, Fr 10-13 Uhr";Freiburger Freiwilligen Agentur;"Mitmachen, Mitgestalten, Mitentscheiden";http://www.freiwillige-freiburg.de
-7.8251601;48.0104727;20;48.010472700000001;7.825160099999950;79110;Ensisheimer Straße;Mi 18-20 Uhr;Roma Büro Freiburg e. V.;Flüchtlinge;http://www.roma-buero-freiburg.eu
-7.849;47.99605;2-4;47.996049999999997;7.848999999999930;79098;Rathausplatz;nach Vereinbarung;Stelle zur Gleichberechtigung der Frau;Frauen und Mädchen;http://www.freiburg.de/frauenbeauftragte
-7.8371037;47.9843027;63;47.984302700000001;7.837103699999940;79100;Lorettostraße;nach telefonischer Vereinbarung;Diakonisches Werk Freiburg: Schwangeren- und Schwangerschaftskonfliktberatung;Frauen und Mädchen;http://www.diakonie-freiburg.de
-7.8894343;47.9862172;99;47.986217199999999;7.889434299999950;79117;Hansjakobstraße;Mo-Do 9-11 Uhr;Internationale Schule im Römerhof;Schule;http://www.internationale-schule-roemerhof.de
-7.85594;48.00358;4;48.003579999999999;7.855940000000030;79104;Wölflinstr.;Mo-Fr 9-12 Uhr und nach telefonischer Vereinbarung;Freiburger Interventionsprojekt gegen Häusliche Gewalt (FRIG);;
-7.8520221;48.0116545;346;48.011654499999999;7.852022100000000;79108;Zähringer Straße;"Beratung nur Dienstagvormittag, nachmittags findet das internationale Frauencafé statt";Anlaufstelle für Frauen aus Nicht- EU-Ländern - Fachdienst Migration;Frauen und Mädchen;http://www.caritas-freiburg.de
-7.8225312;48.0062152;2;48.006215200000000;7.822531199999960;79114;Flurstraße;nach Vereinbarung;"Rückkehr- und Perspektivberatung, Deutsches Rotes Kreuz Kreisverband Freiburg";Flüchtlinge;http://www.drk-freiburg.de
-7.79005;47.99233;15;47.992330000000003;7.790050000000060;79111;Rimsinger Weg;Telefonische Vereinbarung;"Beratungsstelle für Suchdienst und Familienzusammenführung, Deutsches Rotes Kreuz";Flüchtlinge;http://www.drk-freiburg.de/angebote/migration_-_suchdienst/suchdienst.html
-7.8102699;47.9941531;7;47.994153099999998;7.810269899999980;79114;Krozingerstraße;derzeit nur nach telefonischer Vereinbarung;"Diakonisches Werk Freiburg, Fachdienst für Migration und Flüchtlinge";Flüchtlinge;http://www.diakonie-freiburg.de
-7.8421043;47.9990077;;47.999007700000000;7.842104299999960;79005;Postfach 0543;jederzeit;Refugee Law Clinic Freiburg e. V.;Flüchtlinge;http://www.rlc-freiburg.org
-7.849;47.99605;2-4;47.996049999999997;7.848999999999930;79098;Rathausplatz;Mo-Fr 10-16 Uhr;Stabsstelle Bürgerschaftliches Engagement;"Mitmachen, Mitgestalten, Mitentscheiden";http://www.freiburg.de/engagement
-7.8541363;47.992244199999988;2;47.992244199999988;7.854136299999940;79098;Schwabentorring;;MEMO- Regionale Koordinierungsstelle Freiburg;"Mitmachen, Mitgestalten, Mitentscheiden";http://www.memo-bw.de
-7.857562;48.0047295;14;48.004729500000003;7.857562000000030;79104;Jacobistr.;Mo-Do 9-12 Uhr u. nach Vereinbarung;Geschäftsstelle des Migrantinnen-und Migrantenbeirates;"Mitmachen, Mitgestalten, Mitentscheiden";http://www.migrantenbeirat-freiburg.de
-7.81946;47.97549;45;47.975490000000001;7.819459999999940;79100;Vaubanallee;;InZeitung;Kultur und Medien;http://www.inforum.info
-7.84290120000003;47.991833799999988;8;47.991833799999988;7.842901200000030;79098;Faulerstraße;"Mo 13.30-16; Di, Mi 8.45-12.45 Uhr";Südwind Freiburg e. V.;Sprache;http://www.suedwind-freiburg.de
-7.84317750000002;47.9963809;9;47.996380899999998;7.843177500000020;79098;Hans-Sachs-Gasse;Mo-Fr 8-17 Uhr;iOR Sprachschule/ iOR  Sprachakademie;Sprache;http://www.ior-sprachschule.com
+X;Y;ADRESSE_HA;ADRESSE_PL;ADRESSE_ST;OEFFNUNG;BEZEICHN_3;CATEGORY;LINKS_URL;;;
+7.8481515;47.9883296;17;79102;Günterstalstraße;Di, Do 14-16 Uhr;Kinderbüro;Kinder und Jugendliche;http://www.freiburg.de/kinderbuero;;;
+7.8517806;47.9892409;2;79102;Uhlandstraße;Mo-Fr 10-14 Uhr;Jugendbildungswerk Freiburg e. V.;Kinder und Jugendliche;http://www.jbw.de;;;
+7.8536555;47.9975672;1;79098;Auf der Zinnen;;Amt für Wohnraumversorgung: Vermittlung von Privatwohnraum für Flüchtlinge;Flüchtlinge;;;;
+7.8520221;48.0116545;36;79106;Komturstraße;Mo-Do 9-12 Uhr, Mo-Do 14-17 Uhr;Anlauf- und Vermittlungsstelle für Flüchtlinge aus dem Stadtgebiet Freiburg;Flüchtlinge;;;;
+7.8650321;48.0036985;12;79104;Immentalstraße;Mo-Do 9-12 Uhr, Mo-Do 14-17 Uhr;Caritas Flüchtlingsdienst;Flüchtlinge;http://www.caritas-freiburg.de/fachdienst-migration.html;;;
+7.85327;47.99495;30;79098;Münsterplatz;Mo-Do 9-12 Uhr, 13-17 Uhr;Kulturamt Stadt Freiburg;Kultur und Medien;http://www.freiburg.de/kulturamt;;;
+7.8550148;47.9903146;6;79102;Schwarzwaldstraße;Mo-Fr 9.30-12 Uhr, 16-18 Uhr/p>;Patronato Acli Freiburg (Christliche Vereinigung italienischer Arbeitnehmer);Ankommen in Freiburg;http://www.acli.de;;;
+7.86526;48.33907;31;77933;Lotzbeckstraße;;Industrie- und Handelskammer Südlicher Oberrhein Hauptgeschäftsstelle Lahr;Arbeit, Beruf, Ausbildung;http://www.suedlicher-oberrhein.ihk.de;;;
+7.8226307;48.0049455;8;79110;Sundgauallee;Mo-Do. 10-20 Uhr Mo-Do. 10-20 UIhrMo-Do. 10-20 UIhr Mo-Do. 10-20 Uhr Di 14 Uhr-17 UhrFr 9 Uhr-12 Uhr;MBE Caritasverband Freiburg-Stadt;Ankommen in Freiburg;;;;
+7.8492296;47.9906523;5;79098;Dreisamstraße;Mo 9 Uhr-12 Uhr, Mi 10 Uhr-15 Uhr und nach Vereinbarung;MBE Deutsches Rotes Kreuz;Ankommen in Freiburg;;;;
+7.8102699;47.9941531;7;79114;Krozinger Straße;Di 14-17; Do 10-12 Uhr;MBE Diakonisches Werk Freiburg;;;;
+7.8492296;47.9906523;5;79098;Dreisamstraße;Mo 9 Uhr-12 Uhr, Mi 10 Uhr-15 Uhr und nach Vereinbarung;MBE Südwind Freiburg e. V.;Ankommen in Freiburg;;;;
+7.85486;47.98805;39;79102;Hildastraße;Mo, Do, 10-14 Uhr; Di, Mi 14-16 Uhr;Sprache;;;;http://www.sprach-undcomputerkurse.de
+7.79328;47.99795;31-49;79111;Rieselfeldallee;Mo-Do 8-17 Uhr, Fr 8-16 Uhr;Deutsche Angestellten-Akademie (DAA) Freiburg;Sprache;http://www.daa.de;;;
+7.79328;47.99795;31;79111;Rieselfeldallee;telefonische Beratung und persönliche Termine nach Vereinbarung;Integrationskurse;Sprache;http://www.daa.de;;;
+7.8115101;48.021186;5;79110;Linnstraße;nach Vereinbarung;Fördergesellschaft der Handwerkskammer Freiburg;Arbeit, Beruf, Ausbildung;http://www.foege-hwk.de;;;
+7.8488283;47.9988006;37;79098;Friedrichring;Di 14 Uhr oder nach Absprache;Berlitz Deutschland GmbH;Sprache;http://www.berlitz.de/freiburg;;;
+7.8375825;47.9867967;61;79100;Basler Straße;Mo: 14-16 Uhr;Unterschiede anerkennen - Vielfalt leben;Ehe, Familien, Partnerschaft;http://www.vielfalt-freiburg.net;;;
+7.8226307;48.0049455;;79110;Sundgauallee 8 (Ecke Berliner Allee);Do 9.30-12.30 Uhr;FrauenSTÄRKEN im Quartier: Stadtteil Betzenhausen;Frauen und Mädchen;;;;
+7.8977;47.9837;50;79106;Fehrenbachallee;Mo 9-12 Uhr;FrauenSTÄRKEN im Quartier: Stadtteil Stühlinger;Frauen und Mädchen;;;;
+7.8371037;47.9843027;63;79100;Lorettostraße;Mo-Do 9-12 Uh;Diakonisches Werk, Wellcome;Ehe, Familien, Partnerschaft;http://www.wellcome-online.de;;;
+7.84675;47.98812;14;79102;Schwarzwaldstraße;Mo-Mi 10-12 Uhr; Do 15-17 Uhr nur nach vorheriger telefonischer Terminvereinbarung;Helferkreis für Mutter und Kind e. V.;;;;http://www.helferkreis-freiburg.de
+7.8226307;48.0049455;8;79110;Sundgauallee;;Jugendmigrationsdienst (JMD);Ankommen in Freiburg;http://www.jugendmigrationsdienst.de;;;
+7.8386677;48.0034379;12;79106;Büggenreuterstraße;Mo, Di, Do 10-13 Uhr, 15-17 Uhr, Fr 10-13 Uhr;AIDS-Hilfe Freiburg e. V.;Gesundheit;http://www.aids-hilfe-freiburg.de;;;
+7.8321302;48.0015472;14;79106;Fehrenbachallee;Di, Do 10.30 Uhr - 12.00 Uhr, sowie nach Vereinbarung;Geschäftsführende Schulleitung berufliche Schulen, Max-Weber-Schule;Schule;http://www.max-weber-schule.de;;;
+7.8583;48.02279;346;79108;Zähringer Straße;Di 15-17 Uhr;FrauenSTÄRKEN im Quartier: Stadtteil Zähringen;Frauen und Mädchen;;;;
+7.8488182;47.9948337;5;79098;Universitätsstraße;nach Vereinbarung;Sprachlehrinstitut der Albert-Ludwigs-Universität Freiburg (SLI);Studium;http://www.sli.uni-freiburg.de;;;
+7.857562;48.0047295;14;79104;Jacobistr.;nach Vereinbarung;Amt für Migration und Integration - Abteilung 2 Integration;Flüchtlinge;;;;
+7.8447135;47.9978182;5;79098;Poststraße;Mo-Fr 9-12 Uhr und nach Vereinbarung;Jule - Jugendberufshilfe für junge Mütter, IN VIA in der Erzdiözese Freiburg e. V.;Flüchtlinge;http://www.invia-freiburg.de;;;
+7.84683;47.9821;6;79100;Schwaighofstr;;Psychotherapeutische Anlaufstelle für Migrant/-innen Freiburg (PAMF);;http://www.psf.dpv-psa.de/pamf.html;;;
+7.8977;47.9837;25;79117;Kappler Straße;Di 9-12 Uhr;FrauenSTÄRKEN im Quartier: Stadtteil Littenweiler;Frauen und Mädchen;;;;
+7.86995;47.99273;77;79106;Karteuserstraße;Mo 9-12 Uhr, 14-18 UhrDi 8-12 Uhr, 14-17 UhrMi 9-12 Uhr, 14-18 UhrDo 8-12 Uhr, 14-17 UhrFr 9-12 Uhr, 14-16 Uhr;ANKER-Gruppe für Kinder, die mit ihren Eltern geflohen sind;Flüchtlinge;http://www.maks-freiburg.de;;;
+7.81838;47.99218;9b;79115;Melanchthonweg;Di 9.30-12.30 Uhr;FrauenSTÄRKEN im Quartier: Stadtteil Haslach;Frauen und Mädchen;;;;
+7.83802;47.99272;11-13;79098;Schnewlinstraße;;Industrie- und Handelskammer Südlicher Oberrhein;Arbeit, Beruf, Ausbildung;http://www.suedlicher-oberrhein.ihk.de;;;
+7.8366691;47.9950079;73;79098;Klarastraße;;Ahmadiyya Muslim Jamaat - Freiburg;Migrantenvereine;http://www.ahmadiyya-freiburg.de;;;
+7.8650321;48.0036985;12;79104;Immentalstraße;nach Vereinbarung;Projektverbund Baden - Arbeit und Ausbildung für Flüchtlinge;Flüchtlinge;http://www.projektverbund-baden.de;;;
+7.83802;47.99272;11-13;79098;Schnewlinstraße;Mo-Do 09-16:30 Uhr, Fr 09-16 Uhr; nach Absprache;Industrie- und Handelskammer Südlicher Oberrhein;;;;http://www.suedlicher-oberrhein.ihk.de
+7.8558194;47.9901601;9;79098;Poststraße;Mo-Fr 9-12 Uhr und nach Vereinbarung;Internationaler Mädchen- und Frauentreff;Frauen und Mädchen;http://www.invia-freiburg.de;;;
+7.8244917;48.0007785;9f;79114;Bissierstr.;;Get Together Projekt, Deutsches Rotes Kreuz Kreisverband Freiburg;Flüchtlinge;http://www.drk-freiburg.de/angebote/migration_-_suchdienst/get_together.html;;;
+7.8226307;48.0049455;48;79110;Habichtweg;Mi 9.30-12.30 Uhr;FrauenSTÄRKEN im Quartier: Stadtteil Landwasser;Frauen und Mädchen;;;;
+7.8536555;47.9975672;1;79098;Auf der Zinnen;Mo 8-11.30 Uhr, Mi 8-11.30 Uhr, Do 8-11.30 Uhr sowie nach Terminvereinbarung;Amt für Wohnraumversorgung;Wohnen;;;;
+7.8520221;48.0116545;12;79104;Immentalstr.;;Erstanlaufstelle und Kompetenzzentrum Anerkennungsberatung;Arbeit, Beruf, Ausbildung;;;;
+7.8102699;47.9941531;7;79114;Krozinger Straße;Mo, Mi, Do 10-12.30 Uhr und nach Vereinbarung;Diakonisches Werk Freiburg: Arbeitslosenberatung;Arbeit, Beruf, Ausbildung;http://www.goethe2.de;;;
+7.8554475;48.0107351;9;79104;Habsburgerstraße;Di, Mi, Do 10-15 UhrTermine nur n. vorheriger Vereinbarung;friga e. V.;Arbeit, Beruf, Ausbildung;http://www.lagalo.de;;;
+7.8532714;47.9960214;17;79098;Münsterplatz;Di 10-13 u. 14-18 Uhr; Mi 14-17 Uhr;;;;;Wegweiser Bildung - WeBi
+7.84732;47.99618;12;79098;Rotteckring;Mo-Do 10-12; Mo, Di, Do 15-17 Uhr;Sprache;;;;http://www.vhs-freiburg.de
+7.8557035;48.000137;16;79104;Karlstraße;Jeden Dienstag 10-12 Uhr; größere Gruppen: bitte einen Sondertermin unter 0761/ 201-7251 oder 201-7019 vereinbaren.;Schule;;;;
+7.8481;47.99927;39;79098;Friedrichstraße;;International Office - Büro für internationale Beziehungen;Studium;https://www.international.uni-freiburg.de/;;;
+7.849;47.99605;2-4;79098;Rathausplatz;Mo, Di, Do, Fr 8-12 Uhr, Mi 9-17 Uhr;Standesamt;Ehe, Familien, Partnerschaft;http://www.freiburg.de/standesamt;;;
+8.4045022;49.0101995;10;76113;Schlossplatz;;L-Bank;Ehe, Familien, Partnerschaft;;;;
+7.8532381;47.9976811;143;79098;Kaiser-Joseph-Straße;Mo 10-15 Uhr; Mi, Fr 8-11 Uhr;Ehe, Familien, Partnerschaft;;;;http://www.freiburg.de/kinderbetreuung
+7.8454405;47.9983177;17;79098;Colombistraße;Mo, Di, Mi, Fr 9-12 Uhr; Mo, Di, Mi 14-16.30 Uhr;Ehe, Familien, Partnerschaft;;;;http://www.skf-freiburg.de
+7.8380591;47.9958274;3;79106;Engelbergerstraße;Offene Sprechzeit: Di-Do 15-18 Uhr oder Termine nach Vereinbarung;Jugendberatung Freiburg e. V.;Kinder und Jugendliche;http://www.jugendberatung-freiburg.de;;;
+7.81535;48.0144;2;79110;Leisnerstraße;Mo-Fr 9-12 Uhr; Mo, Mi 14-16 Uhr;Kompetenzzentrum Frohe Hilfen;;;;http://www.freiburg.de/fruehehilfen
+7.84675;47.98812;8;79100;Basler Straße;;Anlauf- und Fachberatungsstelle Frauenhorizonte - gegen sexuelle Gewalt e. V.;Frauen und Mädchen;http://www.frauenhorizonte.de;;;
+7.84675;47.98812;5672;79023;Postfach;Mo-Fr 8-18 Uhr; nachts und am Wochenende nimmt die Polizei oder die Telefonseelsorge Kontakt zum Bereitschaftsdienst auf;Frauen- und Kinderschutzhaus;;;;http://www.frauenhaus-freiburg.de
+7.8447738;47.9978232;14;79100;Kronenstraße;Telefonzeiten: Mo, Mi 13-15 Uhr; Di, Do 10-12 Uhr;;;;;Wendepunkt e. V.
+7.84189;47.98895;49a;79102;Kartäuserstraße;Mo-Fr jeweils 9-12 Uhr;Deutscher Kinderschutzbund;Frauen und Mädchen;;;;
+7.8520221;48.0116545;36;79106;Komturstraße;Mo-Fr 9-12; Mo, Mi, Do 14-17 Uhr;;;;;Ankommen in Freiburg
+7.8474312;47.9980619;4;79098;Fahnenbergplatz;;Amt für Liegenschaften und  Wohnungswesen (ALW);Wohnen;;;;
+7.8475068;47.988248;2;79100;Basler Straße;;Amt für Migration und Integration: Staatsangehörigkeits- und Ausländerbehörde;Flüchtlinge;;;;
+7.8475068;47.988248;2;79100;Basler Straße;Mo, Di, Fr 7.30-12 Uhr;Amt für Bürgerservice und  Informationsverarbeitung;Bürgeramt;;;;
+7.8316064;48.0028865;77;79106;Lehener Straße;Mo-Fr 7.45-12.30 Uhr;Bundesagentur für Arbeit;Arbeitsamt;;;;http://www.arbeitsagentur.de
+7.8316064;48.0028865;77;79106;Lehener Straße;Im Rahmen der Öffnungszeiten; zusätzliche Termine nach Vereinbarung;Jobcenter Freiburg;;;;http://www.jobcenter-freiburg.de
+7.8426359;47.9982436;11-13;79098;Bismarckallee;Im Rahmen der Öffnungszeiten; zusätzlich Termine nach Vereinbarung;Jugendagentur des Jobcenters Freiburg;;;;http://www.jobcenter-freiburg.de
+7.8316064;48.0028865;77;79106;Lehener Straße;Mo-Mi 7.45-16.30 Uhr; Do 7.45-18 Uhr;;;;;Arbeit, Beruf, Ausbildung
+7.849;47.99605;2-4;79098;Rathausplatz;Mo, Di, Mi, Fr 8.30-12 Uhr; Mo, Mi 13.30-15.30;;;;;Arbeit, Beruf, Ausbildung
+7.8102699;47.9941531;7;79114;Krozinger Straße;Mo-Fr 10-12.30 Uhr und nach Vereinbarung;Diakonisches Werk Freiburg: Gründerzentrum;Arbeit, Beruf, Ausbildung;http://www.gruenderzentrum-goethe2.de;;;
+7.83231;48.00084;12;79106;Fehrenbachallee;Mo, Di, Do, Fr 10-12 Uhr oder nach Vereinbarung;Seniorenbüro;Senioren und Seniorinnen;http://www.freiburg.de/senioren;;;
+7.8225312;48.0062152;2;79114;Flurstraße;;Deutsches Rotes Kreuz Kreisverband Freiburg e. V.: Gesundheitszentrum Migration;Gesundheit;;;;
+7.8405566;47.9929613;12;79098;Adlerstraße;Di 16.30-18 Uhr;Medinetz;Flüchtlinge;http://medinetz.rasthaus-freiburg.org;;;
+7.8405566;47.9929613;12;79098;Adlerstraße;Mi 15-18 Uhr, Fr 17-20 Uhr;Südbadisches Aktionsbündnis gegen Abschiebungen (SAGA);Flüchtlinge;http://www.saga.rasthaus-freiburg.org/?Kontakt;;;
+7.8532714;47.9960214;17;79098;Münsterplatz;Di-Fr 10-19 Uhr; Sa 10-14 Uhr;Stadtbibliothek;;;;http://www.freiburg.de/stadtbibliothek
+7.7921588;47.9994151;2;79111;Maria-von-Rudloff-Platz;Di, Do, Fr 13-18 Uhr; Mi 10-18 Uhr;Kinder- und Jugendmediothek Rieselfeld;;;;http://www.freiburg.de/stadtbibliothek
+7.8484831;47.9920814;268;79098;Kaiser-Joseph-Straße;;Friedrichsbau-Lichtspiele;Kultur und Medien;http://www.friedrichsbau-kino.de;;;
+7.850117;47.9940443;14-16;79098;Grünwälderstraße;;Harmonie Kino Freiburg;Kultur und Medien;http://www.friedrichsbau-kino.de;;;
+7.8405566;47.9929613;12;79098;Adlerstraße;;Radio Dreyeckland;;http://www.rdl.de;;;
+7.8405566;47.9929613;;;;;Erstanlaufstelle und Kompetenzzentrum Anerkennungsberatung für den Regierungsbezirk Freiburg;Arbeit, Beruf, Ausbildung;;;;
+7.82389;48.01383;21;79110;Falkenbergerstraße;Di, Fr 9-13; Mi 14-18; Do 9-18 Uhr;;;;Kultur und Medien
+7.8541669;47.9848895;40;79102;Urachstraße;;Kommunales Kino im alten Wiehrebahnhof;Kultur und Medien;http://www.koki-freiburg.de;;;
+7.8439496;47.9956445;50;79098;Bertoldstraße;;CinemaxX;Kultur und Medien;http://www.cinemaxx.de/freiburg;;;
+9.2043445;48.7929247;230;70190;Neckarstraße;;SWR International;;http://www.swr.de/international/de;;;
+7.8539888;47.9963186;6;79098;Herrenstraße;;Caritasverband Freiburg-Stadt e. V.;Senioren und Seniorinnen;;;;
+7.82385;47.99089;10;79115;Staudingerstraße;Di-Fr 13-18 Uhr;Stadtteilbibliothek Haslach;Kultur und Medien;http://www.freiburg.de/stadtbibliothek;;;
+7.8455562;47.9879421;20;79100;Basler Straße;dienstags, 16-18 Uhr;Amnesty International Freiburg;Flüchtlinge;http://www.amnesty-suedbaden.de;;;
+7.8437984;47.9947469;6;79098;Sedanstraße;Mo bis Do: 9 bis 12 Uhr, Do: 14 bis 16 Uhr;Service Center Studium - Abteilung International Admissions and Services;Studium;http://www.ias.uni-freiburg.de;;;
+7.8675329;47.9883427;58 A;79117;Schwarzwaldstr.;Mo-Fr 10-16 Uhr; Einlass bis 15 Minuten vor Ende der Öffnungszeit;Freiburger Tafel e.V.;;;;http://www.freiburger-tafel.de
+7.85724;47.9888244;;79102;Dreikönigstraße 9 / Ecke Talstraße;Mo 15-17 Uhr; Di 9-12 Uhr; Mi 15-17 Uhr;;;;Kleiderladen, Vereinigung Freiburger Sozialarbeit
+7.79005;47.99233;15;79111;Rimsinger Weg;Mi und Fr 14-15.30 Uhr;Kleiderkammer, Deutsches Rotes Kreuz;Flüchtlinge;http://www.drk-freiburg.de/angebote/hilfen_in_der_not/kleiderkammer.html;;;
+7.8372647;47.9979172;58;79106;Guntramstraße;Mo, Di, Do, Fr 9.30-18.30 Uhr; Mi 9.30-13.00 Uhr; Sa 9.30-14.00 Uhr;;;;Flüchtlinge
+7.8558194;47.9901601;14;79102;Schwarzwaldstraße;Mo-Fr 10-12 Uhr, nur nach Terminvereinbarung;Helferkreis für Mutter und Kind e.V.;Flüchtlinge;http://www.helferkreis-freiburg.de;;;
+7.79359;47.99343;9;79111;Waltershofener Str.;Mo-Fr 10-18.30 Uhr, Sa 10-14 Uhr;Fairkauf - Gebrauchtwarenkaufhaus, Caritas;Flüchtlinge;http://www.caritas-freiburg.de/fairkauf;;;
+7.82691;47.97889;30;79100;Oltmannsstr.;Mo-Fr 9.30-17.30 Uhr;Hand-2-Hand, Stadtmission;Flüchtlinge;http://www.stadtmission-freiburg.de/begegnung/marktplatz/holzwerkstatt/verkauf;;;
+7.8532381;47.9976811;143;79098;Kaiser-Joseph-Straße;Mo-Do 8-16.30 Uhr, Fr. 8-15.30 Uhr;Amt für Kinder, Jugend und Familie;Flüchtlinge;;;;
+7.8475068;47.988248;2;79100;Basler Str. 2;;Führerscheinstelle, Amt für Öffentliche Ordnung;Flüchtlinge;http://www.freiburg.de/buergerservice;;;
+7.8455239;47.9862622;14;79100;Konradstraße;;Beratungsstellen Freier Träger: Jugendhilfswerk Freiburg e. V;Flüchtlinge;http://www.wi-jhw.de;;;
+7.8494998;47.9897785;42;79102;Schillerstr. 42;Mo-Mi 10-13 Uhr; Do 14-16 Uhr;Freiburger Zentrum für Pädagogische Beratung e.V.;;;;http://www.paed-beratungsstelle.de
+7.81535;48.0144;2;79110;Leisnerstraße;Mo-Do 8-12 Uhr und 14-16 Uhr; Fr 8 -12 Uhr;Psychologische Beratungsstelle für Eltern, Kinder und Jugendliche;;;;http://www.freiburg.de/erziehungsberatung
+7.8118083;47.9945337;11;79114;Krozinger Straße;Mo, Di, Do, Fr 10-19 Uhr; Mi und Sa 10-14 Uhr;Spinnwebe - Second-Hand-Center, Diakonie;;;;http://www.die-spinnwebe.de
+7.8505759;47.9946398;3;79098;Salzstraße;Mo-Fr 8-19 Uhr, Sa 8.30-16 Uhr;pluspunkt, Kundenzentrum der Freiburger Verkehrs AG (VAG);Flüchtlinge;http://www.vag-freiburg.de;;;
+7.83231;48.00084;12;79106;Fehrenbachallee;Mo-Do 7.30-16.30 Uhr; Fr 7.30-15.30 Uhr;Amt für Soziales und Senioren;;;;
+7.8478259;47.9859397;41;79102;Günterstalstr.;Mo-Fr 9-12 Uhr;Psychosoziale Beratung in Familienkrisen für Eltern, Kinder und Jugendliche;;http://www.psb-freiburg.de;;;
+7.8481515;47.9883296;17;79102;Günterstalstraße;Mo-Do 8-12 Uhr und 14-16 Uhr; Fr 8 -12 Uhr;Psychologische Beratungsstelle für Eltern, Kinder und Jugendliche;;;;http://www.freiburg.de/erziehungsberatung
+7.81535;48.0144;19b;79114;Krozingerstraße;Mo-Do 8-12 Uhr und 14-16 Uhr; Fr 8 -12 Uhr;Psychologische Beratungsstelle für Eltern, Kinder und Jugendliche;;;;http://www.freiburg.de/erziehungsberatung
+7.8525555;47.9947333;19;79098;Schusterstraße;in der Regel am Di, Mi, Do 9-12 Uhr;Stadtseniorenrat Freiburg e. V.;Senioren und Seniorinnen;http://www.ssr-freiburg.de;;;
+7.8567634;47.9898676;24;79102;Schwarzwaldstraße;Mo, Mi, Fr 9-11.30 UhrDi (Frauenfrühstück) 10-11.30 UhrDo (verschied. Angebote) 10-12.30 Uhr;FreiRaum - Hilfen für Frauen in Wohnungsnot;Frauen und Mädchen;http://www.diakonie-freiburg.de;;;
+7.8371037;47.9843027;63;79100;Lorettostraße;nach telefonischer Vereinbarung;Diakonisches Werk Freiburg: Allgemeine Sozialberatung und Kurberatung;Ehe, Familien, Partnerschaft;http://www.diakonie-freiburg.de;;;
+7.84026;47.98496;42;79100;Lorettostraße;Mo 10.30-12.30 Uhr;Frauen im Südwind Freiburg e. V.;Flüchtlinge;http://www.suedwind-freiburg.de;;;
+7.8454405;47.9983177;17;79098;Colombistraße;Mo-Fr 9-12 Uhr;AIDS-Beratung für Frauen & Familien, SkF-Treff Freiburg;Frauen und Mädchen;http://www.skf-freiburg.de;;;
+7.8316064;48.0028865;77;79106;Lehener Straße;Mo-Fr 9-12.30 Uhr, Do 15-18 Uhr;Welcome Center Freiburg Oberrhein;Ankommen in Freiburg;http://www.welcomecenter-freiburg-oberrhein.de/;;;
+7.8567634;47.9898676;24;79102;Schwarzwaldstraße;;Äkumenisches Asylforum;Flüchtlinge;http://www.diakonie-freiburg.de;;;
+7.84675;47.98812;8;79100;Basler Straße;Mi 9.30-12; Do 15-18 Uhr oder AB, baldiger Rückruf;Frauen- und MädchenGesundheits Zentrum Freiburg e. V. - FMGZ e. V.;;;;http://www.fmgz-freiburg.de
+7.8532381;47.9976811;143;79098;Kaiser-Joseph-Straße;Mo-Do 8-16.30 Uhr; Fr 8-15.30 Uhr;Amt für Kinder, Jugend und Familie, Kommunaler Sozialer Dienst (KSD);;;;
+7.8468543;47.9908542;12-16;79098;Schreiberstraße;Mo-Di 9-12 Uhr, Do 9-12 Uhr und 13.30-16 Uhr sowie nach telefonischer Terminvereinbarung;Studierendenwerk Freiburg;Studium;http://www.swfr.de;;;
+7.84675;47.98812;8;79100;Basler Straße;Mo, Di, Do, Fr 10.30-12.30 Uhr; Mi 14-16 Uhr;Wildwasser e. V.;;;;http://www.wildwasser-freiburg.de
+7.84675;47.98812;33;79106;Friedhofstraße;bei Bedarf;MigraZentrum e. V.;Frauen und Mädchen;http://www.migrazentrum-freiburg.de;;;
+7.8541363;47.9922442;2;79098;Schwabentorring;Mo 13-16 Uhr; Di, Do, Fr 10-13 Uhr;Freiburger Freiwilligen Agentur;;;;http://www.freiwillige-freiburg.de
+7.8251601;48.0104727;20;79110;Ensisheimer Straße;Mi 18-20 Uhr;Roma Büro Freiburg e. V.;Flüchtlinge;http://www.roma-buero-freiburg.eu;;;
+7.849;47.99605;2-4;79098;Rathausplatz;nach Vereinbarung;Stelle zur Gleichberechtigung der Frau;Frauen und Mädchen;http://www.freiburg.de/frauenbeauftragte;;;
+7.8371037;47.9843027;63;79100;Lorettostraße;nach telefonischer Vereinbarung;Diakonisches Werk Freiburg: Schwangeren- und Schwangerschaftskonfliktberatung;Frauen und Mädchen;http://www.diakonie-freiburg.de;;;
+7.8894343;47.9862172;99;79117;Hansjakobstraße;Mo-Do 9-11 Uhr;Internationale Schule im Römerhof;Schule;http://www.internationale-schule-roemerhof.de;;;
+7.8520221;48.0116545;346;79108;Zähringer Straße;Beratung nur Dienstagvormittag, nachmittags findet das internationale Frauencafé statt;Anlaufstelle für Frauen aus Nicht- EU-Ländern - Fachdienst Migration;Frauen und Mädchen;http://www.caritas-freiburg.de;;;
+7.8225312;48.0062152;2;79114;Flurstraße;nach Vereinbarung;Rückkehr- und Perspektivberatung, Deutsches Rotes Kreuz Kreisverband Freiburg;Flüchtlinge;http://www.drk-freiburg.de;;;
+7.79005;47.99233;15;79111;Rimsinger Weg;Telefonische Vereinbarung;Beratungsstelle für Suchdienst und Familienzusammenführung, Deutsches Rotes Kreuz;Flüchtlinge;http://www.drk-freiburg.de/angebote/migration_-_suchdienst/suchdienst.html;;;
+7.8102699;47.9941531;7;79114;Krozingerstraße;derzeit nur nach telefonischer Vereinbarung;Diakonisches Werk Freiburg, Fachdienst für Migration und Flüchtlinge;Flüchtlinge;http://www.diakonie-freiburg.de;;;
+7.8421043;47.9990077;;79005;Postfach 0543;jederzeit;Refugee Law Clinic Freiburg e. V.;Flüchtlinge;http://www.rlc-freiburg.org;;;
+7.849;47.99605;2-4;79098;Rathausplatz;Mo-Fr 10-16 Uhr;Stabsstelle Bürgerschaftliches Engagement;Mitmachen, Mitgestalten, Mitentscheiden;http://www.freiburg.de/engagement;;;
+7.8541363;47.9922442;2;79098;Schwabentorring;;MEMO- Regionale Koordinierungsstelle Freiburg;Mitmachen, Mitgestalten, Mitentscheiden;http://www.memo-bw.de;;;
+7.857562;48.0047295;14;79104;Jacobistr.;Mo-Do 9-12 Uhr u. nach Vereinbarung;Geschäftsstelle des Migrantinnen-und Migrantenbeirates;Mitmachen, Mitgestalten, Mitentscheiden;http://www.migrantenbeirat-freiburg.de;;;
+7.81946;47.97549;45;79100;Vaubanallee;;InZeitung;Kultur und Medien;http://www.inforum.info;;;
+7.8429012;47.9918338;8;79098;Faulerstraße;Mo 13.30-16; Di, Mi 8.45-12.45 Uhr;Südwind Freiburg e. V.;;;;http://www.suedwind-freiburg.de

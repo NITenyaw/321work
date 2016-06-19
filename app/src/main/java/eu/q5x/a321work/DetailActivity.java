@@ -14,6 +14,10 @@ import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.osmdroid.api.IMapController;
@@ -29,11 +33,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
 import eu.q5x.a321work.Model.SubTask;
+import eu.q5x.a321work.View.ScrollMapView;
 import us.feras.mdv.MarkdownView;
 
 
@@ -42,6 +48,15 @@ public class DetailActivity extends AppCompatActivity {
 
     private MapView mapView;
     private MapController mapController;
+
+    private HashSet<String> category;
+    private ArrayList<Double> lats;
+    private ArrayList<Double> longs;
+    private ArrayList<String> poi;
+    private ArrayList<String> house_number;
+    private ArrayList<String> streets;
+    private ArrayList<String> opening;
+    private ArrayList<String> plz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +79,9 @@ public class DetailActivity extends AppCompatActivity {
 
             checkPermissions();
 
-            HashSet<String> category = subTask.category;
+            category = subTask.category;
+            System.out.println(category.toString());
+            readCSV();
             mapView = (MapView) findViewById(R.id.mapview);
             if (mapView != null) {
                 mapView.setTileSource(TileSourceFactory.MAPNIK);
@@ -72,37 +89,62 @@ public class DetailActivity extends AppCompatActivity {
                 mapView.setMultiTouchControls(true);
                 IMapController mapController = mapView.getController();
                 mapController.setZoom(9);
-                GeoPoint startPoint = new GeoPoint(48.0,7.0);
+                GeoPoint startPoint = new GeoPoint(48, 7);
+                if (lats.size() > 0) {
+                    startPoint = new GeoPoint(lats.get(0), longs.get(0));
+                }
                 mapController.setCenter(startPoint);
             }
             addPoints();
+            makeList();
         }
     }
 
-    /*
     private void readCSV() {
-        List resultList = new ArrayList();
         InputStream contentSteam = getResources().openRawResource(R.raw.poi_fr);
         BufferedReader reader = new BufferedReader(new InputStreamReader(contentSteam));
+        lats = new ArrayList<>();
+        longs = new ArrayList<>();
+        poi = new ArrayList<>();
+        streets = new ArrayList<>();
+        opening = new ArrayList<>();
+        house_number = new ArrayList<>();
+        plz = new ArrayList<>();
         try {
             reader.readLine();
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] row = line.split(";");
-                resultList.add(row);
+                if (row[7] != "" && category.contains(row[7])) {
+                    lats.add(Double.valueOf(row[1]));
+                    longs.add(Double.valueOf(row[0]));
+                    poi.add(row[6]);
+                    house_number.add(row[2]);
+                    streets.add(row[4]);
+                    opening.add(row[5]);
+                    plz.add(row[3]);
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    */
+
+    private String buildPoiString(int i) {
+        return poi.get(i) + "\n" +
+                streets.get(i) + " " + house_number.get(i) + "\n" +
+                opening.get(i);
+    }
 
     private void addPoints() {
-
         ArrayList<OverlayItem> items = new ArrayList<>();
-        // Put overlay icon a little way from map centre
-        GeoPoint point = new GeoPoint(48.0,7.0);
-        items.add(new OverlayItem("Here", "SampleDescription", point));
+
+        for (int i = 0; i < lats.size(); i++) {
+            GeoPoint point = new GeoPoint(lats.get(i), longs.get(i));
+            // Put overlay icon a little way from map centre
+            items.add(new OverlayItem(buildPoiString(i), "SampleDescription", point));
+        }
+
 
         /* OnTapListener for the Markers, shows a simple Toast. */
         ItemizedOverlay<OverlayItem> locationOverlay = new ItemizedIconOverlay<>(items,
@@ -127,6 +169,16 @@ public class DetailActivity extends AppCompatActivity {
                 }, this.getApplicationContext());
         mapView.getOverlays().add(locationOverlay);
         mapView.invalidate();
+    }
+
+    private void makeList() {
+        LinearLayout list = (LinearLayout) findViewById(R.id.list);
+        for (int i = 0; i < lats.size(); i++) {
+            String poi = buildPoiString(i);
+            TextView poiView = new TextView(this);
+            poiView.setText(poi);
+            list.addView(poiView);
+        }
     }
 
     @TargetApi(Build.VERSION_CODES.M)

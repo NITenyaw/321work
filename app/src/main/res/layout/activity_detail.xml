@@ -24,5 +24,12 @@
             android:layout_below="@id/markdownView"
             >
         </org.osmdroid.views.MapView>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/list"
+            android:layout_below="@id/mapview"
+            android:orientation="vertical">
+        </LinearLayout>
     </RelativeLayout>
 </ScrollView>
