@@ -14,11 +14,16 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        >
 
         <ProgressBar style="?android:attr/progressBarStyleHorizontal"
             android:progressDrawable="@drawable/phase_progressbar"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="10dp"
             android:id="@+id/progress"
             android:max="100"
@@ -37,11 +42,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/example_phase"
-            android:maxLines="1"
+            android:maxLines="2"
             android:padding="8dp"
             android:textColor="#222"
             android:textStyle="bold"
-            android:textSize="22sp"
+            android:textSize="18sp"
             android:layout_centerVertical="true"
             android:layout_toEndOf="@+id/phase_icon" />
 
