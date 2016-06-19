@@ -60,12 +60,7 @@ X;Y;ADRESSE_HA;ADRESSE_PL;ADRESSE_ST;OEFFNUNG;BEZEICHN_3;CATEGORY;LINKS_URL;;;
 7.8520221;48.0116545;36;79106;Komturstraße;Mo-Fr 9-12; Mo, Mi, Do 14-17 Uhr;;;;;Ankommen in Freiburg
 7.8474312;47.9980619;4;79098;Fahnenbergplatz;;Amt für Liegenschaften und  Wohnungswesen (ALW);Wohnen;;;;
 7.8475068;47.988248;2;79100;Basler Straße;;Amt für Migration und Integration: Staatsangehörigkeits- und Ausländerbehörde;Flüchtlinge;;;;
-7.8475068;47.988248;2;79100;Basler Straße;Mo 07:30-12:00, Tue 07:30-12:00, Wed 07:30-20:00, Do
-                                          07:30 - 12:00 und 13:00 - 16:00 Uhr
-                                          Fr
-                                          07:30 - 12:00 Uhr
-                                          Sa
-                                          09:30 - 12:30 Uhr;Citizen service, integration agency (Amt für Bürgerservice und Informationsverarbeitung);Bürgeramt;;;;
+7.8475068;47.988248;2;79100;Basler Straße;Mo 07:30-12:00, Tue 07:30-12:00, Wed 07:30-20:00, Thu 07:30-12:00 and 13:00-16:00, Fr 07:30-12:00, Sa 09:30-12:30 Uhr;Citizen service, integration agency (Amt für Bürgerservice und Informationsverarbeitung);Bürgeramt;;;;
 7.8316064;48.0028865;77;79106;Lehener Straße;Mo-Fr 7.45-12.30 Uhr;Local employance agency (Bundesagentur für Arbeit);Arbeitsamt;;;;http://www.arbeitsagentur.de
 7.8316064;48.0028865;77;79106;Lehener Straße;Im Rahmen der Öffnungszeiten; zusätzliche Termine nach Vereinbarung;Jobcenter Freiburg;;;;http://www.jobcenter-freiburg.de
 7.8426359;47.9982436;11-13;79098;Bismarckallee;Im Rahmen der Öffnungszeiten; zusätzlich Termine nach Vereinbarung;Jugendagentur des Jobcenters Freiburg;;;;http://www.jobcenter-freiburg.de
