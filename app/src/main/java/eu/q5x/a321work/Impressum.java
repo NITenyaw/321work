@@ -22,6 +22,8 @@ public class Impressum extends AppCompatActivity {
         MarkdownView impressum_text = (MarkdownView) findViewById(R.id.impressum_text);
         impressum_text.loadMarkdown("**321work!** was developed by the **321Hack!** team during the **Hackathon 2016** in Freiburg (Topic: Newcomer).\n" +
                 "\n" +
+                "Visit us on: <https://321hack.github.io/> \n" +
+                "\n" +
                 "Team members:\n" +
                 "\n" +
                 "**Lucas Spohn, Jérôme Meinke, Benedikt Throner, Jan Vogt, Marcel Gangwisch, Patrick Bastien und Semih Volkert** \n" +

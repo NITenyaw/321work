@@ -69,8 +69,7 @@ public class DetailActivity extends AppCompatActivity {
         if (subTask != null) {
 
             android.support.v7.app.ActionBar ab = getSupportActionBar();
-            ab.setTitle("321Work!");
-            ab.setSubtitle(subTask.title);
+            ab.setTitle(subTask.title);
 
             MarkdownView markdownView = (MarkdownView) findViewById(R.id.markdownView);
             if (markdownView != null) {
@@ -88,7 +87,7 @@ public class DetailActivity extends AppCompatActivity {
                 mapView.setBuiltInZoomControls(true);
                 mapView.setMultiTouchControls(true);
                 IMapController mapController = mapView.getController();
-                mapController.setZoom(9);
+                mapController.setZoom(13);
                 GeoPoint startPoint = new GeoPoint(48, 7);
                 if (lats.size() > 0) {
                     startPoint = new GeoPoint(lats.get(0), longs.get(0));
