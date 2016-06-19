@@ -3,6 +3,7 @@ package eu.q5x.a321work;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ public class Impressum extends AppCompatActivity {
         android.support.v7.app.ActionBar ab = getSupportActionBar();
         ab.setTitle("321Work!");
         ab.setSubtitle("Impressum");
+        ab.setDisplayHomeAsUpEnabled(true);
 
         MarkdownView impressum_text = (MarkdownView) findViewById(R.id.impressum_text);
         impressum_text.loadMarkdown("**321work!** was developed by the **321Hack!** team during the **Hackathon 2016** in Freiburg (Topic: Newcomer).\n" +
@@ -40,5 +42,17 @@ public class Impressum extends AppCompatActivity {
                 "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n" +
                 "\n" +
                 "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.");
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
