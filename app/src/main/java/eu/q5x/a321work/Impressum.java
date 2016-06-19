@@ -15,16 +15,22 @@ public class Impressum extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_impressum);
 
+        android.support.v7.app.ActionBar ab = getSupportActionBar();
+        ab.setTitle("321Work!");
+        ab.setSubtitle("Impressum");
+
         ImageView logo = (ImageView) findViewById(R.id.logo);
-        logo.setImageResource(R.mipmap.ic_launcher);
+        logo.setImageResource(R.drawable.logo_impressum);
 
         MarkdownView impressum_text = (MarkdownView) findViewById(R.id.impressum_text);
-        StringBuilder impressum = new StringBuilder();
-        impressum.append("This app is developed by **321Hack!** \n");
-        impressum.append("It was developed in the context of the **Hackathon 2016** in Freiburg. \n");
-        impressum.append("Involved in developing this app: \n");
-        impressum.append("**Lucas Spohn, Jérôme Meinke, Benedikt Throner, Jan Vogt, Marcel Gangwisch, Patrick Bastien und Semih Volkert**");
-        impressum_text.loadMarkdown(impressum.toString());
+        impressum_text.loadMarkdown("This app is developed by **321Hack!**\n" +
+                "\n" +
+                "It was developed in the context of the **Hackathon 2016** in Freiburg.\n" +
+                "\n" +
+                "Involved in developing this app were:\n" +
+                "\n" +
+                "**Lucas Spohn, Jérôme Meinke, Benedikt Throner, Jan Vogt, Marcel Gangwisch, Patrick Bastien und Semih Volkert** \n" +
+                "\n");
 
 
         MarkdownView license = (MarkdownView) findViewById(R.id.license);
