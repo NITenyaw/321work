@@ -1,7 +1,11 @@
 package eu.q5x.a321work.Adapters;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
+import android.support.v4.content.res.ResourcesCompat;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -36,6 +40,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
         // each data item is just a string in this case
         public RelativeLayout header;
         public ImageView icon;
+        public ImageView done;
         public TextView title;
         public SmoothProgressBar progressBar;
         public RecyclerView recyclerView;
@@ -45,6 +50,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
 
             header = (RelativeLayout) v.findViewById(R.id.header);
             icon = (ImageView) v.findViewById(R.id.task_icon);
+            done = (ImageView) v.findViewById(R.id.done_icon);
             title = (TextView) v.findViewById(R.id.title);
             progressBar = (SmoothProgressBar) v.findViewById(R.id.progress);
             recyclerView = (RecyclerView) v.findViewById(R.id.subtask_recycler_view);
@@ -52,8 +58,10 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
 
         public void setProgress(int progress, boolean animate) {
             if (progress >= 99) {
-                header.setBackgroundColor(ContextCompat.getColor(itemView.getContext(), R.color.colorAccent));
+                done.setVisibility(View.VISIBLE);
+                header.setBackgroundColor(Color.parseColor("#CEDD95"));
             } else {
+                done.setVisibility(View.GONE);
                 header.setBackgroundColor(0);
             }
             progressBar.setAnimate(animate);
@@ -86,8 +94,20 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
 
         Context context = holder.icon.getContext();
         String iconId = task.id.replaceAll("-", "").toLowerCase();
+        if (task.id.startsWith("work")) {
+            iconId = iconId.replace("work", "appr");
+        }
+
         int id = context.getResources().getIdentifier(iconId, "mipmap", context.getPackageName());
-        holder.icon.setImageResource(id);
+
+        final Drawable drawable = ResourcesCompat.getDrawable(context.getResources(), id, null);
+        if (drawable != null) {
+            final Drawable wrapped = DrawableCompat.wrap(drawable);
+            drawable.mutate();
+            DrawableCompat.setTint(wrapped, Color.parseColor("#907A00"));
+            holder.icon.setImageDrawable(wrapped);
+        }
+
         holder.header.setBackgroundColor(0);
 
         holder.setProgress(task.getProgress(), false);

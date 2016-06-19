@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="8dp"
-    android:layout_marginStart="0dp"
+    android:layout_marginStart="8dp"
     android:layout_marginEnd="8dp"
     card_view:cardCornerRadius="0dp">
 
@@ -20,26 +20,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/header"
-            android:elevation="2dp"
             android:background="@android:color/white">
 
-            <eu.q5x.a321work.View.SmoothProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
-                android:progressDrawable="@drawable/task_progressbar"
-                android:layout_width="fill_parent"
-                android:layout_height="10dp"
-                android:id="@+id/progress"
-                android:max="100"
-                android:progress="0"/>
-
-            <ImageView
-                android:id="@+id/task_icon"
+            <FrameLayout
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:scaleType="centerCrop"
-                android:contentDescription="@string/task_icon"
-                android:layout_below="@id/progress"
-                android:layout_alignParentStart="true" />
+                android:id="@+id/task_icon_frame"
+                android:layout_alignParentStart="true">
+                <ImageView
+                    android:id="@+id/task_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/task_icon" />
+
+                <ImageView
+                    android:id="@+id/done_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_done_black_24dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/task_icon"
+                    android:layout_gravity="top|right" />
+            </FrameLayout>
+
 
             <TextView
                 android:id="@+id/title"
@@ -52,7 +56,31 @@
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/task_icon_frame" />
+
+            <!--
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example_phase"
+                android:maxLines="2"
+                android:padding="8dp"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
                 android:layout_toEndOf="@+id/task_icon" />
+                -->
+
+            <eu.q5x.a321work.View.SmoothProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/task_progressbar"
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:id="@+id/progress"
+                android:layout_below="@id/task_icon_frame"
+                android:max="100"
+                android:progress="0"/>
         </RelativeLayout>
 
         <android.support.v7.widget.RecyclerView
