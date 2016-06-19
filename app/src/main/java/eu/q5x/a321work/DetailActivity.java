@@ -81,8 +81,16 @@ public class DetailActivity extends AppCompatActivity {
 
             checkPermissions();
 
-            category = subTask.category;
-            System.out.println(category.toString());
+            /*
+             * if subTask.category is null, a new empty HashSet will be created to prevent NullPointers :)
+             * previously a System.out.println(category.toString()) caused a NullPointer.
+             */
+            if (subTask.category != null) {
+                category = subTask.category;
+            } else {
+                category = new HashSet<>();
+            }
+
             readCSV();
             mapView = (MapView) findViewById(R.id.mapview);
             if (mapView != null) {
