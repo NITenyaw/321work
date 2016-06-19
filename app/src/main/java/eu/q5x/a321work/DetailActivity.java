@@ -14,6 +14,7 @@ import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -70,6 +71,7 @@ public class DetailActivity extends AppCompatActivity {
 
             android.support.v7.app.ActionBar ab = getSupportActionBar();
             ab.setTitle(subTask.title);
+            ab.setDisplayHomeAsUpEnabled(true);
 
             MarkdownView markdownView = (MarkdownView) findViewById(R.id.markdownView);
             if (markdownView != null) {
@@ -190,6 +192,18 @@ public class DetailActivity extends AppCompatActivity {
             String[] params = permissions.toArray(new String[permissions.size()]);
             int REQUEST_CODE_ASK_PERM = 124;
             requestPermissions(params, REQUEST_CODE_ASK_PERM);
+        }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 }
