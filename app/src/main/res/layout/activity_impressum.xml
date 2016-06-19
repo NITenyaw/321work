@@ -25,11 +25,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/logo"/>
-            <TextView
+            <us.feras.mdv.MarkdownView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/impressum_text"/>
-            <TextView
+            <us.feras.mdv.MarkdownView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/license"/>
