@@ -14,6 +14,7 @@ import android.os.Build;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
@@ -132,7 +133,7 @@ public class DetailActivity extends AppCompatActivity {
     }
 
     private String buildPoiString(int i) {
-        return poi.get(i) + "\n" +
+        return "<b>" + poi.get(i) + "</b>" + "\n" +
                 streets.get(i) + " " + house_number.get(i) + "\n" +
                 opening.get(i);
     }
@@ -143,7 +144,7 @@ public class DetailActivity extends AppCompatActivity {
         for (int i = 0; i < lats.size(); i++) {
             GeoPoint point = new GeoPoint(lats.get(i), longs.get(i));
             // Put overlay icon a little way from map centre
-            items.add(new OverlayItem(buildPoiString(i), "SampleDescription", point));
+            items.add(new OverlayItem(Html.fromHtml(buildPoiString(i)).toString(), "SampleDescription", point));
         }
 
 
@@ -175,9 +176,9 @@ public class DetailActivity extends AppCompatActivity {
     private void makeList() {
         LinearLayout list = (LinearLayout) findViewById(R.id.list);
         for (int i = 0; i < lats.size(); i++) {
-            String poi = buildPoiString(i);
+            String poi = buildPoiString(i) + "\n";
             TextView poiView = new TextView(this);
-            poiView.setText(poi);
+            poiView.setText(Html.fromHtml(poi));
             list.addView(poiView);
         }
     }

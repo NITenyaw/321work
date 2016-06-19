@@ -29,7 +29,8 @@
             android:layout_width="match_parent"
             android:id="@+id/list"
             android:layout_below="@id/mapview"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>
