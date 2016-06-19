@@ -3,6 +3,10 @@ package eu.q5x.a321work;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.support.v4.content.res.ResourcesCompat;
+import android.support.v4.graphics.drawable.DrawableCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -28,17 +32,23 @@ public class TaskActivity extends AppCompatActivity {
         if (phase != null) {
             ActionBar actionBar = getSupportActionBar();
             if (actionBar != null) {
-                actionBar.setTitle(phase.title);
+                actionBar.setTitle("  " + phase.title);
 
                 int iconId = getResources().getIdentifier(phase.id, "mipmap", getPackageName());
-                actionBar.setLogo(iconId);
-                actionBar.setDisplayUseLogoEnabled(true);
-                actionBar.setDisplayShowHomeEnabled(true);
+                final Drawable drawable = ResourcesCompat.getDrawable(getResources(), iconId, null);
+                if (drawable != null) {
+                    final Drawable wrapped = DrawableCompat.wrap(drawable);
+                    drawable.mutate();
+                    DrawableCompat.setTint(wrapped, Color.parseColor("#FFFFFF"));
+                    actionBar.setLogo(wrapped);
+                    actionBar.setDisplayUseLogoEnabled(true);
+                    actionBar.setDisplayShowHomeEnabled(true);
+                }
             }
             RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
             if (recyclerView != null) {
                 // use this setting to improve performance if you know that changes
-                // in content do not change the layout size of the RecyclerView
+                // in content_en do not change the layout size of the RecyclerView
                 // recyclerView.setHasFixedSize(true);
 
                 // use a linear layout manager

@@ -51,7 +51,7 @@ public class Task implements Comparable<Task> {
 
         int percentDone = 0;
         for(SubTask subtask : subTasks) {
-            if (subtask.isDone()) percentDone += Math.round(100f / subTasks.size());
+            if (subtask.isDone()) percentDone += Math.round(100f / subTasks.size()) + 1;
         }
         return percentDone;
     }

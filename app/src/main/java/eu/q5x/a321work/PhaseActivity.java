@@ -2,6 +2,8 @@ package eu.q5x.a321work;
 
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -47,6 +49,14 @@ public class PhaseActivity extends AppCompatActivity {
             adapter = new PhaseAdapter(WorkApp.getPhases(), listener);
             recyclerView.setAdapter(adapter);
         }
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle("  " + getString(R.string.app_name));
+            actionBar.setLogo(R.mipmap.ic_launcher);
+            actionBar.setDisplayUseLogoEnabled(true);
+            actionBar.setDisplayShowHomeEnabled(true);
+        }
     }
 
     @Override
@@ -67,6 +77,11 @@ public class PhaseActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public boolean onPrepareOptionsMenu(Menu menu){
+        MenuTintUtils.tintAllIcons(menu, Color.parseColor("#FFFFFF"));
+        return true;
     }
 
     @Override

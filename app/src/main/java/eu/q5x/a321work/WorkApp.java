@@ -1,7 +1,6 @@
 package eu.q5x.a321work;
 
 
-import java.io.File;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -33,7 +32,7 @@ public class WorkApp extends Application {
         pref = getSharedPreferences(TAG, MODE_PRIVATE);
 
         ObjectMapper mapper = new ObjectMapper();
-        InputStream contentSteam = getResources().openRawResource(R.raw.content);
+        InputStream contentSteam = getResources().openRawResource(R.raw.content_en);
 
         // JSON from file to Object
         try {
