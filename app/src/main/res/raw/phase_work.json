@@ -1,0 +1,338 @@
+{
+  "title": "Finding Work",
+  "id": "work",
+  "order": 500,
+  "tasks": [
+    {
+      "id": "work-beinf",
+      "title": "Be informed",
+      "subtitle": "There are so many sources that can support you!",
+      "order": 10,
+      "subTasks": [
+        {
+          "id": "work-beinf-1",
+          "title": "Reflect on your strengths",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "work-beinf-2",
+          "title": "Reflect on what you want to do",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "work-beinf-3",
+          "title": "Do research about available vocational fields",
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "work-beinf-4",
+          "title": "Inform yourself about the local labour market",
+          "order": 4,
+          "contribution": 1
+        },
+        {
+          "id": "work-beinf-5",
+          "title": "Inform yourself about the level of German demanded in your branch",
+          "order": 5,
+          "contribution": 1,
+		  "category": ["Arbeitsamt"],
+		  "description": "Working and German language skills\r\n-------------\r\n\r\nExcept for higher education working environments, you cannot rely on the fact that your colleagues will be able to communicate with you in English. Depending on your field of work, it is possible that your customers won't be able to talk to you in English in a convenient way. Thus, it's usually very hard to find a job if your German language skills are not good enough for simple conversation.\r\n\r\nTherefore, you'll considerably improve your chances of finding employment or to starting an apprenticeship if you have no serious problems communicating in German. Then you also maximise the benefit of exercising your foreign language skills everyday. \r\n\r\nYou should inform yourself what level of German is usually excepted for applicants in the sector you would like to work. Your local employment agency is the best spot where you can find this information. You can also find information about language courses there."
+        }
+      ]
+    },
+    {
+      "id": "work-cert",
+      "title": "Prepare your Paperwork",
+      "subtitle": "It makes verifying your qualifications easier.",
+      "order": 20,
+      "subTasks": [
+        {
+          "id": "work-cert-1",
+          "title": "Gather your Paperwork\n (e.g. Dimplomas, Certificates, References, Resume, CV and Contracts etc.)",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "work-cert-2",
+          "title": "Get your Paperwork Translated to German\n (especially your certificates and CV)",
+          "order": 2,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "work-contactImm",
+      "title": "Contact your immigration office",
+      "subtitle": "They are the best to tell you what your next steps should be.",
+      "order": 30,
+      "subTasks": [
+        {
+          "id": "work-contactImm-1",
+          "title": "Tell them about your plans and preferences",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "work-contactImm-2",
+          "title": "Ask them for guidance and follow their directions",
+          "order": 2,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "work-visitEA",
+      "title": "Visit the local employment agency",
+      "subtitle": "They are the specialists for finding a job opportunity.",
+      "order": 40,
+      "subTasks": [
+        {
+          "id": "work-visitEA-1",
+          "title": "Collect school and work certificates",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "work-visitEA-2",
+          "title": "Write down your school and work experience, strengths and wishes",
+          "order": 2,
+          "contribution": 0
+        },
+        {
+          "id": "work-visitEA-3",
+          "title": "Get an appointment at your local employment agency",
+          "order": 3,
+          "contribution": 1,
+		  "category": ["Arbeitsamt"],
+		  "description": "The employment agency - *Arbeitsamt*\r\n-------------\r\n\r\nYour local employment agency can offer you a variety of personal support as well as courses and tools for finding a job opportunity you might enjoy.\r\n\r\nTherefore, if you want find employment, in German called *Ausbildung*, it should be the first place you visit after you've checked with your immigration office that you are eligible to work in Germany as an immigrant.\r\n\r\nThe Federal Office for Employment gives you some information on their website [(press here)](https://www.arbeitsagentur.de/web/content/EN/index.htm), also available in English.\r\n\r\nYou also get a lot of useful information on the website of the Federal Office for Migration and Refugees [(press here)](http://www.bamf.de/EN/Migration/Arbeiten/arbeiten-node.html), in English as well.\r\n\r\nBelow, you can find the location of the local employment agency of the city you've selected in the app. Feel free to go there anytime during opening hours."
+        },
+        {
+          "id": "work-visitEA-4",
+          "title": "Keep your appointment",
+          "order": 4,
+          "contribution": 1,
+          "dependencies": [
+            "work-visitEA-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-internship",
+      "title": "Internship for orientation",
+      "subtitle": "An internship might be a great opportunity to get some first-hand experience in an area of work, even if it isn't paid.",
+      "order": 50,
+      "subTasks": [
+        {
+          "id": "work-internship-1",
+          "title": "Inform yourself about the different kinds of internships",
+          "order": 1,
+          "contribution": 1,
+		  "category": ["Arbeitsamt", "Bürgeramt"],
+		  "description": "Different kinds of internships\r\n-------------\r\n\r\nGerman law differentiates several kinds of internship. For some of them, you'll need a working permit from the *Immigration Agency*, for others, you don't. Especially for internships where you are paid the minimum wage, the *Immigration Agency* will also contact the *Employment Agency* whether you are eligible for the specific employment opportunity. So, in order to get an adequate explanation of what you are allowed to do and what not, you'd best get in contact with your *Immigration Agency*.\r\n\r\n**In general, you are not allowed to take up an occupation earlier than 3 months after you've applied for asylum! This also applies if you are forced to stay within a refugee center, for example, if you are coming from a safe country.** \r\n\r\nHowever, a so called *Hospitation* where you get insight into a company or working place without actively participating and without getting any payment is usually not defined as an occupation. So this might be something you could even do before the three-month-timeline if you find an opportunity where you can be an observer for some days.\r\n\r\nFor all other kinds of internships, you must fulfil the prerequsites and you need a permit from the *Immigration Agency*. If you have been **granted asylum, the status as refugee or subsidiary protection**, you are eligible for a **residency permit** that gives you unlimited access to the German labour market.\r\n\r\n**Internships with a duration of over 3 months** have to be payed with the official minimum wage and you'll also need a permit from the *Employment Agency* which needs additional prerequisites to be granted.\r\n\r\nIf you want to do an **internship for orientation prior to starting an apprenticeship**, you don't need a permit from the Employment Agency but only from the *Immigration Agency*. the same goes for internships where your potential **future employer wants to check whether you are generally suited to the selected branch**, called *Eignungsfeststellungs*.\r\n\r\nHowever, if you have to do work which is typically done by a normal employee during your internship, this is rather **regarded as trial working** and also needs a permit from the *Employment Agency*.\r\n\r\nAs you see, the exact classification of your internship might be difficult and has several consequences, so professional counselling by your Immigration or Emloyment Agency is very advisable if you want to do an internship.\r\n\r\nShorty, the permit from the *Immigration Agency* is usually granted if you fulfil the prerequisites while the permit from the *Employment Agency* is a more complex process also involving your future employer and the local labour situation in your branch."
+        },
+        {
+          "id": "work-internship-2",
+          "title": "Find a place where you can do an internship",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "work-internship-3",
+          "title": "Apply for an internship",
+          "order": 3,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "work-prerequisites",
+      "title": "Fulfill official prerequisites for an apprenticeship",
+      "subtitle": "There are different ways to become eligible to work in Germany as an immigrant.",
+      "maxContribution": 3,
+      "order": 60,
+      "subTasks": [
+        {
+          "id": "work-prerequisites-1",
+          "title": "3 Months have passed since application for asylum",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "work-prerequisites-2",
+          "title": "You do not come from a safe country of origin",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "work-prerequisites-3",
+          "title": "You do not live within a refugee centre",
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "work-prerequisites-4",
+          "title": "You have continuously lived in Germany for more than 4 years",
+          "order": 4,
+          "contribution": 3
+        },
+        {
+          "id": "work-prerequisites-5",
+          "title": "You have been granted asylum",
+          "order": 5,
+          "contribution": 3
+        },
+        {
+          "id": "work-prerequisites-6",
+          "title": "You have been granted official status as a refugee",
+          "order": 6,
+          "contribution": 3
+        },
+        {
+          "id": "work-prerequisites-7",
+          "title": "You have been granted subsidiary protection",
+          "order": 7,
+          "contribution": 3
+        },
+        {
+          "id": "work-prerequisites-8",
+          "title": "Recheck your status with your immigration office",
+          "order": 8,
+          "contribution": 0
+        }
+      ]
+    },
+    {
+      "id": "work-apply",
+      "title": "Apply to companies or organizations",
+      "subtitle": "Choose your favourites and apply for a job there!",
+      "order": 70,
+      "dependencies": [
+            "work-prerequisites"
+      ],
+      "subTasks": [
+        {
+          "id": "work-apply-1",
+          "title": "Use the job portal of the employment agency",
+          "order": 1,
+          "contribution": 0
+        },
+        {
+          "id": "work-apply-2",
+          "title": "Ask your consultant at the employment agency for job postings",
+          "order": 2,
+          "contribution": 0
+        },
+        {
+          "id": "work-apply-3",
+          "title": "Thoroughly read the job descriptions",
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "work-apply-4",
+          "title": "Write application letters",
+          "order": 4,
+          "contribution": 1
+        },
+        {
+          "id": "work-apply-5",
+          "title": "Ask someone to check your application",
+          "order": 5,
+          "contribution": 0
+        },
+        {
+          "id": "work-apply-6",
+          "title": "Mail in your applications and wait for reply",
+          "order": 6,
+          "contribution": 1
+        },
+        {
+          "id": "work-apply-7",
+          "title": "Continue to look for alternatives",
+          "order": 7,
+          "contribution": 0
+        }
+      ]
+    },
+    {
+      "id": "work-approval",
+      "title": "Get your employment status approved",
+      "subtitle": "You'll need approval from the immigration office before you can start to work.",
+      "order": 80,
+      "dependencies": [
+            "work-apply"
+      ],
+      "subTasks": [
+        {
+          "id": "work-approval-1",
+          "title": "Get the official form for the work approval from the immigration office",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "work-approval-2",
+          "title": "Fill out the form as far as you can get",
+          "order": 2,
+          "contribution": 1
+        },
+        {
+          "id": "work-approval-3",
+          "title": "Get the form completed by your company/organization",
+          "order": 3,
+          "contribution": 1
+        },
+        {
+          "id": "work-approval-4",
+          "title": "Attach copies of requested certificates",
+          "order": 4,
+          "contribution": 1
+        },
+        {
+          "id": "work-approval-5",
+          "title": "Bring the form to your immigration office",
+          "order": 5,
+          "contribution": 1
+        }
+      ]
+    },
+    {
+      "id": "work-startAppr",
+      "title": "Start your Job",
+      "subtitle": "Almost everything done!",
+      "order": 90,
+      "dependencies": [
+            "work-approval"
+      ],
+      "subTasks": [
+        {
+          "id": "work-startAppr-1",
+          "title": "Work out a contract with your company/organization",
+          "order": 1,
+          "contribution": 1
+        },
+        {
+          "id": "work-startAppr-2",
+          "title": "Inform yourself about social insurance",
+          "order": 2,
+          "contribution": 0
+        },
+        {
+          "id": "work-startAppr-3",
+          "title": "Inform yourself about job-specific regulations",
+          "order": 3,
+          "contribution": 0
+        },
+        {
+          "id": "work-startAppr-4",
+          "title": "Begin your job and enjoy it!",
+          "order": 4,
+          "contribution": 1
+        }
+      ]
+    }
+  ]
+}
