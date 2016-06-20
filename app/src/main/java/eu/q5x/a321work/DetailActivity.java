@@ -3,30 +3,23 @@ package eu.q5x.a321work;
 
 import android.Manifest;
 import android.annotation.TargetApi;
-import android.app.ActionBar;
-import android.content.Context;
 import android.content.pm.PackageManager;
-import android.content.res.AssetManager;
-import android.location.Location;
-import android.location.LocationManager;
-import android.location.LocationProvider;
 import android.os.Build;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
+import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import org.osmdroid.api.IMapController;
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
 import org.osmdroid.util.GeoPoint;
-import org.osmdroid.views.MapController;
-import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.ItemizedIconOverlay;
 import org.osmdroid.views.overlay.ItemizedOverlay;
 import org.osmdroid.views.overlay.OverlayItem;
@@ -35,82 +28,75 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
 import eu.q5x.a321work.Model.SubTask;
-import eu.q5x.a321work.View.ScrollMapView;
+import eu.q5x.a321work.View.CustomMapView;
 import us.feras.mdv.MarkdownView;
 
 
 public class DetailActivity extends AppCompatActivity {
+    private static final String TAG = "Detail";
     public static final String SUBTASK_ID = "subtaskId";
 
-    private MapView mapView;
-    private MapController mapController;
+    private CustomMapView mapView;
 
-    private HashSet<String> category;
     private ArrayList<Double> lats;
     private ArrayList<Double> longs;
     private ArrayList<String> poi;
     private ArrayList<String> house_number;
     private ArrayList<String> streets;
     private ArrayList<String> opening;
-    private ArrayList<String> plz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-
         String id = getIntent().getStringExtra(SUBTASK_ID);
         SubTask subTask = WorkApp.getSubTask(id);
         if (subTask != null) {
 
-            android.support.v7.app.ActionBar ab = getSupportActionBar();
-            ab.setTitle(subTask.title);
-            ab.setDisplayHomeAsUpEnabled(true);
+            ActionBar ab = getSupportActionBar();
+            if (ab != null) {
+                ab.setTitle(subTask.title);
+                ab.setDisplayHomeAsUpEnabled(true);
+            }
 
             MarkdownView markdownView = (MarkdownView) findViewById(R.id.markdownView);
             if (markdownView != null) {
                 markdownView.loadMarkdown(subTask.description);
             }
 
-            checkPermissions();
-
-            /*
-             * if subTask.category is null, a new empty HashSet will be created to prevent NullPointers :)
-             * previously a System.out.println(category.toString()) caused a NullPointer.
-             */
-            if (subTask.category != null) {
-                category = subTask.category;
-            } else {
-                category = new HashSet<>();
-            }
-
-            readCSV();
-            mapView = (MapView) findViewById(R.id.mapview);
+            mapView = (CustomMapView) findViewById(R.id.mapview);
             if (mapView != null) {
-                mapView.setTileSource(TileSourceFactory.MAPNIK);
-                mapView.setBuiltInZoomControls(true);
-                mapView.setMultiTouchControls(true);
-                IMapController mapController = mapView.getController();
-                mapController.setZoom(13);
-                GeoPoint startPoint = new GeoPoint(48, 7);
-                if (lats.size() > 0) {
-                    startPoint = new GeoPoint(lats.get(0), longs.get(0));
+                if (subTask.category != null) {
+                    readCSV(subTask.category);
+                    checkPermissions();
+
+                        mapView.setTileSource(TileSourceFactory.MAPNIK);
+                        mapView.setBuiltInZoomControls(true);
+                        mapView.setMultiTouchControls(true);
+                        IMapController mapController = mapView.getController();
+                        mapController.setZoom(18);
+                        GeoPoint startPoint = new GeoPoint(48, 7);
+                        if (lats.size() > 0) {
+                            startPoint = new GeoPoint(lats.get(0), longs.get(0));
+                        }
+                        mapController.setCenter(startPoint);
+
+                    addPoints();
+                    makeList();
+                } else {
+                    mapView.setVisibility(View.GONE);
                 }
-                mapController.setCenter(startPoint);
             }
-            addPoints();
-            makeList();
         }
     }
 
-    private void readCSV() {
+    private void readCSV(HashSet<String> category) {
         InputStream contentSteam = getResources().openRawResource(R.raw.poi_fr);
         BufferedReader reader = new BufferedReader(new InputStreamReader(contentSteam));
         lats = new ArrayList<>();
@@ -119,24 +105,24 @@ public class DetailActivity extends AppCompatActivity {
         streets = new ArrayList<>();
         opening = new ArrayList<>();
         house_number = new ArrayList<>();
-        plz = new ArrayList<>();
+        // ArrayList<String> plz = new ArrayList<>();
         try {
             reader.readLine();
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] row = line.split(";");
-                if (row[7] != "" && category.contains(row[7])) {
+                if (row.length >= 8 && !row[7].isEmpty() && category.contains(row[7])) {
                     lats.add(Double.valueOf(row[1]));
                     longs.add(Double.valueOf(row[0]));
                     poi.add(row[6]);
                     house_number.add(row[2]);
                     streets.add(row[4]);
                     opening.add(row[5]);
-                    plz.add(row[3]);
+                    // plz.add(row[3]);
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.e(TAG, e.toString());
         }
     }
 
@@ -187,7 +173,9 @@ public class DetailActivity extends AppCompatActivity {
             String poi = buildPoiString(i) + "\n";
             TextView poiView = new TextView(this);
             poiView.setText(Html.fromHtml(poi));
-            list.addView(poiView);
+            if (list != null) {
+                list.addView(poiView);
+            }
         }
     }
 

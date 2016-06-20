@@ -36,8 +36,8 @@
 
                 <ImageView
                     android:id="@+id/done_icon"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:src="@drawable/ic_done_black_24dp"
                     android:scaleType="centerCrop"
                     android:contentDescription="@string/task_icon"

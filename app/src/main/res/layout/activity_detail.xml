@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="eu.q5x.a321work.DetailActivity">
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical" >
@@ -17,20 +17,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/markdownView" />
-        <org.osmdroid.views.MapView
-            android:id = "@+id/mapview"
+        <eu.q5x.a321work.View.CustomMapView
+            android:id="@+id/mapview"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_below="@id/markdownView"
-            >
-        </org.osmdroid.views.MapView>
+            android:layout_margin="20dp"
+            android:layout_height="300dp" />
         <LinearLayout
+            android:id="@+id/list"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:id="@+id/list"
-            android:layout_below="@id/mapview"
-            android:orientation="vertical"
-            android:layout_marginTop="16dp">
+            android:orientation="vertical">
         </LinearLayout>
-    </RelativeLayout>
+    </LinearLayout>
 </ScrollView>
