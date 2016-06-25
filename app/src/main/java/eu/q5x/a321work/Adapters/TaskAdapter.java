@@ -20,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import eu.q5x.a321work.Model.Phase;
 import eu.q5x.a321work.Model.Task;
@@ -30,7 +31,7 @@ import eu.q5x.a321work.View.SmoothProgressBar;
  * Class description
  */
 public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
-    private ArrayList<Task> tasks;
+    private List<Task> tasks;
     private TaskAdapter taskAdapter = this;
 
     // Provide a reference to the views for each data item
@@ -70,7 +71,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    public TaskAdapter(ArrayList<Task> myTasks) {
+    public TaskAdapter(List<Task> myTasks) {
         tasks = myTasks;
     }
 
@@ -90,11 +91,11 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
         // - get element from your dataset at this position
         final Task task = tasks.get(position);
 
-        holder.title.setText(task.title);
+        holder.title.setText(task.getTitle());
 
         Context context = holder.icon.getContext();
-        String iconId = task.id.replaceAll("-", "").toLowerCase();
-        if (task.id.startsWith("work")) {
+        String iconId = task.getId().replaceAll("-", "").toLowerCase();
+        if (task.getId().startsWith("work")) {
             iconId = iconId.replace("work", "appr");
         }
 
@@ -117,16 +118,16 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.ViewHolder> {
 
         RecyclerView.Adapter adapter = new SubTaskAdapter(context, task, holder);
         holder.recyclerView.setAdapter(adapter);
-        holder.recyclerView.setVisibility(task.isExpanded ? View.VISIBLE : View.GONE);
+        holder.recyclerView.setVisibility(task.isExpanded() ? View.VISIBLE : View.GONE);
 
         holder.header.setOnClickListener(
-            new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    task.isExpanded = !task.isExpanded;
-                    notifyDataSetChanged();
-                }
-            });
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        task.setExpanded(!task.isExpanded());
+                        notifyDataSetChanged();
+                    }
+                });
     }
 
     // Return the size of your dataset (invoked by the layout manager)

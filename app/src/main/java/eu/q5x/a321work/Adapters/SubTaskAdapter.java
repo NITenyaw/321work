@@ -14,7 +14,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.Collection;
+import java.util.List;
 
 import eu.q5x.a321work.DetailActivity;
 import eu.q5x.a321work.Model.SubTask;
@@ -29,7 +30,7 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
     private Context context;
     private Task task;
     private TaskAdapter.ViewHolder taskVh;
-    private ArrayList<SubTask> subTasks;
+    private List<SubTask> subTasks;
 
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
@@ -56,7 +57,7 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
         context = parentContext;
         task = parentTask;
         taskVh = parentVh;
-        subTasks = task.subTasks;
+        subTasks = task.getSubTasks();
     }
 
     // Create new views (invoked by the layout manager)
@@ -77,8 +78,8 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
 
         // - replace the contents of the view with that element
         // holder.title.setText(subTask.title);
-        if (subTask.title != null && !subTask.title.isEmpty()) {
-            String[] title = subTask.title.split("\r\n|\r|\n", 2);
+        if (subTask.getTitle() != null && !subTask.getTitle().isEmpty()) {
+            String[] title = subTask.getTitle().split("\r\n|\r|\n", 2);
             holder.checkBox.setText(title[0]);
             if (title.length > 1) {
                 holder.subtitle.setVisibility(View.VISIBLE);
@@ -88,20 +89,20 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
             }
         }
 
-        holder.checkBox.setChecked(WorkApp.getPref().contains(subTask.id));
+        holder.checkBox.setChecked(WorkApp.getPref().contains(subTask.getId()));
         holder.checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    WorkApp.getPref().edit().putBoolean(subTask.id, true).apply();
+                    WorkApp.getPref().edit().putBoolean(subTask.getId(), true).apply();
                 } else {
-                    WorkApp.getPref().edit().remove(subTask.id).apply();
+                    WorkApp.getPref().edit().remove(subTask.getId()).apply();
                 }
                 taskVh.setProgress(task.getProgress(), true);
             }
         });
         holder.details.setVisibility(View.GONE);
-        if (subTask.description != null && !subTask.description.isEmpty()) {
+        if (subTask.getDescription() != null && !subTask.getDescription().isEmpty()) {
             holder.details.setVisibility(View.VISIBLE);
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -111,24 +112,24 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
             });
         }
 
-        if (subTask.dependencies != null && !subTask.dependencies.isEmpty()) {
+        if (subTask.getDependencies() != null && !subTask.getDependencies().isEmpty()) {
             SharedPreferences prefs = WorkApp.getPref();
-            applyDeps(holder.checkBox, prefs, subTask.dependencies);
+            applyDeps(holder.checkBox, prefs, subTask.getDependencies());
 
             prefs.registerOnSharedPreferenceChangeListener(
                     new SharedPreferences.OnSharedPreferenceChangeListener() {
                         public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
-                            if (subTask.dependencies.contains(key)) {
-                                applyDeps(holder.checkBox, prefs, subTask.dependencies);
+                            if (subTask.getDependencies().contains(key)) {
+                                applyDeps(holder.checkBox, prefs, subTask.getDependencies());
                             }
                         }
                     });
         }
     }
 
-    public void applyDeps(AppCompatCheckBox cb, SharedPreferences pref, HashSet<String> deps) {
+    public void applyDeps(AppCompatCheckBox cb, SharedPreferences pref, Collection<String> deps) {
         boolean enabled = true;
-        for(String dep : deps) {
+        for (String dep : deps) {
             if (!pref.contains(dep)) {
                 enabled = false;
                 break;
@@ -140,7 +141,7 @@ public class SubTaskAdapter extends RecyclerView.Adapter<SubTaskAdapter.ViewHold
 
     public void onItemClick(SubTask subTask) {
         Intent openPhase = new Intent(context, DetailActivity.class);
-        openPhase.putExtra(DetailActivity.SUBTASK_ID, subTask.id);
+        openPhase.putExtra(DetailActivity.SUBTASK_ID, subTask.getId());
         context.startActivity(openPhase);
     }
 

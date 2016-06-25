@@ -30,7 +30,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.List;
 
 import eu.q5x.a321work.Model.PointOfInterest;
@@ -57,14 +56,14 @@ public class DetailActivity extends AppCompatActivity {
             // init action bar
             ActionBar ab = getSupportActionBar();
             if (ab != null) {
-                ab.setTitle(subTask.title);
+                ab.setTitle(subTask.getTitle());
                 ab.setDisplayHomeAsUpEnabled(true);
             }
 
             // init markdown view
             MarkdownView markdownView = (MarkdownView) findViewById(R.id.markdownView);
             if (markdownView != null) {
-                markdownView.loadMarkdown(subTask.description);
+                markdownView.loadMarkdown(subTask.getDescription());
             }
 
             // init map view
@@ -75,12 +74,12 @@ public class DetailActivity extends AppCompatActivity {
     private void initMapView(SubTask subTask) {
         CustomMapView mapView = (CustomMapView) findViewById(R.id.mapview);
         if (mapView != null) {
-            if (subTask.category != null && !subTask.category.isEmpty()) {
+            if (subTask.getCategories() != null && !subTask.getCategories().isEmpty()) {
                 // check if the app has the necessary permissions
                 checkPermissions();
 
                 // get the points of interests for the given category from csv
-                Collection<PointOfInterest> pois = readPoisFromCsv(subTask.category);
+                Collection<PointOfInterest> pois = readPoisFromCsv(subTask.getCategories());
 
                 // configure map view
                 mapView.setTileSource(TileSourceFactory.MAPNIK);

@@ -1,17 +1,17 @@
 package eu.q5x.a321work;
 
 
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 import android.app.Application;
 import android.content.SharedPreferences;
 import android.util.Log;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import eu.q5x.a321work.Model.Phase;
 import eu.q5x.a321work.Model.SubTask;
@@ -36,17 +36,18 @@ public class WorkApp extends Application {
 
         // JSON from file to Object
         try {
-            TypeReference<List<Phase>> typeReference = new TypeReference<List<Phase>>() {};
+            TypeReference<List<Phase>> typeReference = new TypeReference<List<Phase>>() {
+            };
             phases = mapper.readValue(contentSteam, typeReference);
 
             // Sort everything.
             Collections.sort(phases);
-            for(Phase phase : phases) {
-                if (phase.tasks != null) {
-                    Collections.sort(phase.tasks);
-                    for (Task task : phase.tasks) {
-                        if (task.subTasks != null)
-                            Collections.sort(task.subTasks);
+            for (Phase phase : phases) {
+                if (phase.getTasks() != null && !phase.getTasks().isEmpty()) {
+                    Collections.sort(phase.getTasks());
+                    for (Task task : phase.getTasks()) {
+                        if (task.getSubTasks() != null)
+                            Collections.sort(task.getSubTasks());
                     }
                 }
             }
@@ -61,15 +62,15 @@ public class WorkApp extends Application {
     }
 
     public static Phase getPhase(String id) {
-        for(Phase phase : phases) {
-            if (id.equals(phase.id)) return phase;
+        for (Phase phase : phases) {
+            if (id.equals(phase.getId())) return phase;
         }
         return null;
     }
 
     public static SubTask getSubTask(String id) {
-        for(Phase phase : phases) {
-            for (Task task : phase.tasks) {
+        for (Phase phase : phases) {
+            for (Task task : phase.getTasks()) {
                 SubTask subTask = task.getSubTask(id);
                 if (subTask != null) return subTask;
             }

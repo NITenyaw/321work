@@ -32,9 +32,9 @@ public class TaskActivity extends AppCompatActivity {
         if (phase != null) {
             ActionBar actionBar = getSupportActionBar();
             if (actionBar != null) {
-                actionBar.setTitle("  " + phase.title);
+                actionBar.setTitle("  " + phase.getTitle());
 
-                int iconId = getResources().getIdentifier(phase.id, "mipmap", getPackageName());
+                int iconId = getResources().getIdentifier(phase.getId(), "mipmap", getPackageName());
                 final Drawable drawable = ResourcesCompat.getDrawable(getResources(), iconId, null);
                 if (drawable != null) {
                     final Drawable wrapped = DrawableCompat.wrap(drawable);
@@ -56,7 +56,7 @@ public class TaskActivity extends AppCompatActivity {
                 recyclerView.setLayoutManager(layoutManager);
 
                 // specify an adapter (see also next example)
-                RecyclerView.Adapter adapter = new TaskAdapter(phase.tasks);
+                RecyclerView.Adapter adapter = new TaskAdapter(phase.getTasks());
                 recyclerView.setAdapter(adapter);
             }
         }

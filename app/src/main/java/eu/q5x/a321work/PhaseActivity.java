@@ -25,7 +25,7 @@ public class PhaseActivity extends AppCompatActivity {
                 @Override
                 public void onItemClick(Phase phase, final PhaseAdapter.ViewHolder viewHolder) {
                     Intent openPhase = new Intent(activity, TaskActivity.class);
-                    openPhase.putExtra(TaskActivity.PHASE_ID, phase.id);
+                    openPhase.putExtra(TaskActivity.PHASE_ID, phase.getId());
                     startActivity(openPhase);
                 }
             };
